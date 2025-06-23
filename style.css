@@ -457,3 +457,24 @@ footer {
 .cta .hero-button { background-color: #ffffff; color: #121212; }
 .cta .hero-button:hover { background-color: #121212; color: #ffffff; }
 @media (max-width: 768px) { .ozellikler .container { flex-direction: column; } .hero h1 { font-size: 36px; } }
+
+
+/* ---------- MOBİL MENÜ DÜZENLEMESİ (Yatay Kaymayı Engeller) ---------- */
+
+/* Ekran 850px'den daha darsa bu kurallar geçerli olsun */
+@media (max-width: 850px) {
+    header .container {
+        flex-direction: column; /* Logo ve menüyü alt alta getirir */
+        gap: 20px; /* Aralarına boşluk koyar */
+    }
+
+    nav ul {
+        flex-wrap: wrap; /* EN ÖNEMLİ KURAL: Sığmazsa alt satıra atla! */
+        justify-content: center; /* Butonları kendi içinde ortala */
+    }
+
+    nav ul li {
+        margin-left: 10px; /* Butonların arasını biraz daraltalım */
+        margin-right: 10px;
+    }
+}
