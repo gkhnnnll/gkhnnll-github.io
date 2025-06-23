@@ -186,6 +186,87 @@ footer {
     font-size: 16px;
     line-height: 1.6;
     color: #bbbbbb;
+    
+    /* Hizmetler kartı içindeki link için stil */
+.hizmet-kart-link {
+    color: #e53935; /* Kırmızı renk */
+    font-weight: bold;
+    text-decoration: none;
+}
+.hizmet-kart-link:hover {
+    text-decoration: underline; /* Üzerine gelince altını çiz */
+}
+
+/* =========================================== */
+/* === HİZMETLER SAYFASI - YENİ BÖLÜMLER === */
+/* =========================================== */
+
+/* Bölüm başlıkları için stil */
+.hizmet-bolum-baslik {
+    font-size: 28px;
+    color: #ffffff;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #e53935;
+    padding-bottom: 15px;
+}
+
+.hizmet-bolum-baslik:first-of-type {
+    margin-top: 40px; /* İlk başlığın üst boşluğu daha az olsun */
+}
+
+/* Oto Kurtarma bölümü için özel stiller */
+.oto-kurtarma-bolumu {
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-align: left;
+}
+
+.oto-kurtarma-ikon i {
+    font-size: 60px;
+    color: #e53935;
+}
+
+.oto-kurtarma-metin {
+    flex-grow: 1; /* Metin alanı kalan tüm boşluğu doldursun */
+}
+
+.oto-kurtarma-metin h3 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.oto-kurtarma-metin p {
+    margin: 0;
+    font-size: 16px;
+    color: #bbbbbb;
+    line-height: 1.6;
+}
+
+.oto-kurtarma-buton-alan .hero-button {
+    white-space: nowrap; /* "Hemen Ara" yazısı bölünmesin */
+    padding: 12px 25px; /* Butonu biraz küçültelim */
+    font-size: 16px;
+}
+
+/* Mobil için Oto Kurtarma bölümü düzenlemesi */
+@media (max-width: 768px) {
+    .oto-kurtarma-bolumu {
+        flex-direction: column; /* Telefonda alt alta gelsin */
+        text-align: center;
+    }
+
+    .oto-kurtarma-metin {
+        margin: 20px 0;
+    }
+}
 }
 /* ---------- HAKKIMIZDA SAYFASI STİLLERİ ---------- */
 
@@ -558,5 +639,30 @@ footer {
     }
     .hamburger.active .line:nth-child(3) {
         transform: rotate(45deg) translate(-8px, -8px);
+    }
+}
+
+/* ---------- GENEL BÖLÜM BAŞLIĞI STİLİ ---------- */
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px; /* Altındaki içerikle arasını açar */
+    color: #ffffff;
+}
+
+/* "Neden Biz?" bölümündeki kartları saran grid */
+.ozellikler-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+/* Küçük ekranda kartların alt alta gelmesi için eski kuralı güncelleyelim */
+@media (max-width: 768px) {
+    .ozellikler-grid {
+        flex-direction: column;
+    }
+    .hero h1 {
+        font-size: 36px;
     }
 }
