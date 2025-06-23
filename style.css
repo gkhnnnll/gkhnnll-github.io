@@ -480,17 +480,12 @@ footer {
 }
 
 /* ======================================================= */
-/* === YENİ TIKLAYINCA AŞAĞI AÇILAN MOBİL MENÜ STİLİ === */
+/* === FİNAL - AŞAĞI AÇILAN MOBİL MENÜ STİLİ (ÇALIŞAN) === */
 /* ======================================================= */
 
-/* Önce menüyü normalde gizleyelim */
-nav {
-    display: none;
-}
-
-/* Hamburger ikonunu her zaman görünür yapalım */
+/* Hamburger ikonunu başlangıçta gizle */
 .hamburger {
-    display: block;
+    display: none;
     cursor: pointer;
 }
 .hamburger .line {
@@ -501,60 +496,57 @@ nav {
     transition: 0.4s;
 }
 
-/* Bilgisayar ekranında (851px ve üstü) menüyü göster, hamburgeri gizle */
+/* Masaüstü görünümü (851px ve üstü) */
 @media (min-width: 851px) {
-    nav {
-        display: block; /* Menüyü göster */
-    }
-    .hamburger {
-        display: none; /* Hamburgeri gizle */
+    nav ul {
+        display: flex; /* Masaüstünde linkler yan yana */
     }
 }
 
-/* Mobil ekran için (850px ve altı) açılır menü stilleri */
+/* Mobil görünümü (850px ve altı) */
 @media (max-width: 850px) {
     header .container {
-        /* Bu kural sayesinde logo ve hamburger yan yana, menü aşağıda kalacak */
-        flex-wrap: wrap; 
+        flex-wrap: wrap; /* Logo ve hamburgerin yan yana sığmasını sağlar */
         justify-content: space-between;
     }
 
+    .hamburger {
+        display: block; /* Hamburgeri göster */
+    }
+
     nav {
-        /* Menü tüm satırı kaplasın ve normalde gizli kalsın */
-        width: 100%;
-        max-height: 0; /* Normalde yüksekliği sıfır */
-        overflow: hidden; /* İçindekiler taşmasın, gizlensin */
-        transition: max-height 0.4s ease-out; /* Açılıp kapanma animasyonu */
+        width: 100%; /* Menü tüm satırı kaplasın */
+        max-height: 0; /* Normalde yüksekliği sıfır, yani gizli */
+        overflow: hidden; /* İçindekiler taşmasın, görünmesin */
+        transition: max-height 0.5s ease-out; /* Yumuşak açılma animasyonu */
     }
 
     /* JavaScript ile .active sınıfı eklenince menü açılacak */
     nav.active {
-        max-height: 500px; /* Açıldığında alabileceği maksimum yükseklik */
-        margin-top: 20px;
+        max-height: 300px; /* Açıldığında alacağı yükseklik (link sayına göre ayarla) */
+        margin-top: 20px; /* Üstten boşluk */
     }
 
     nav ul {
-        flex-direction: column; /* Linkler alt alta gelsin */
+        flex-direction: column; /* Linkleri alt alta diz */
         width: 100%;
-        padding: 0;
+        padding-top: 10px;
     }
 
     nav ul li {
-        margin: 0;
-        width: 100%;
         text-align: center;
+        margin-left: 0; /* Masaüstü boşluğunu sıfırla */
     }
 
     nav ul li a {
-        padding: 15px; /* Tıklama alanını büyütelim */
-        display: block; /* Tüm satırı kaplasın */
-        border-bottom: 1px solid #333; /* Linklerin arasına çizgi koyalım */
-    }
-    nav ul li:last-child a {
-        border-bottom: none; /* Son linkin altındaki çizgiyi kaldır */
+        padding: 15px;
+        display: block; /* Tıklama alanını büyüt */
+        border-bottom: none;
+        border-top: 1px solid #333; /* Linklerin arasına çizgi koy */
     }
     nav ul li a:hover {
         background-color: #e53935;
+        border-bottom-color: transparent; /* Hover'da alttaki çizgiyi kaldır */
     }
 
     /* Hamburger tıklandığında (çarpı efekti) */
