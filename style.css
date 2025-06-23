@@ -1,0 +1,459 @@
+/* Genel Ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #121212; /* Koyu antrasit arka plan */
+    color: #e0e0e0; /* Açık gri yazı rengi */
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto; /* İçeriği ortalar */
+}
+
+/* Header (Üst Kısım) ve Menü */
+header {
+    background-color: #1f1f1f; /* Biraz daha açık bir koyu renk */
+    padding: 15px 0;
+    border-bottom: 3px solid #e53935; /* Marka kimliğine uygun kırmızı bir çizgi */
+}
+
+header .container {
+    display: flex; /* Logoyu ve menüyü yan yana getirir */
+    justify-content: space-between; /* Aralarına boşluk koyar */
+    align-items: center; /* Dikey olarak ortalar */
+}
+
+/* ESKİ LOGO KURALLARINI SİLİP BUNLARI YAPIŞTIR */
+
+.logo-container {
+    display: flex; /* Logoyu ve yazıyı yan yana getirir */
+    align-items: center; /* Dikey olarak ortalar */
+    text-decoration: none; /* Linkin altındaki çizgiyi kaldırır */
+}
+
+.logo-container img {
+    height: 55px; /* Logonun yüksekliği */
+    margin-right: 15px; /* Logo ile yazı arasına boşluk koyar */
+}
+
+.logo-container span {
+    font-size: 24px; /* Yazı boyutu (eskisi gibi) */
+    font-weight: bold; /* Kalın yazı (eskisi gibi) */
+    color: #f1c40f; /* Beyaz renk (eskisi gibi) */
+    text-transform: uppercase; /* BÜYÜK HARF (eskisi gibi) */
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Madde işaretlerini kaldırır */
+    display: flex; /* Menü elemanlarını yan yana dizer */
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid transparent; /* Üzerine gelince çıkacak çizgi için hazırlık */
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    border-bottom-color: #e53935; /* Üzerine gelince kırmızı çizgi belirir */
+}
+
+/* "active" sınıfı o an hangi sayfadaysak onu belirtir */
+nav ul li a.active {
+    color: #ffffff;
+    font-weight: bold;
+    border-bottom-color: #e53935;
+}
+
+/* Ana İçerik Alanı */
+main {
+    padding: 60px 0;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 18px;
+    color: #bbbbbb;
+}
+
+/* Footer (Alt Kısım) */
+footer {
+    background-color: #1f1f1f;
+    padding: 40px 0 20px 0;
+    border-top: 1px solid #333;
+}
+
+.footer-icerik {
+    display: flex;
+    justify-content: space-around; /* İçerikleri yayar */
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.footer-icerik h4 {
+    color: #ffffff;
+    font-size: 18px;
+    border-bottom: 2px solid #e53935;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.footer-icerik p {
+    margin: 10px 0;
+    color: #bbbbbb;
+}
+
+.footer-icerik a {
+    color: #e53935; /* Linkleri kırmızı yap */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-icerik a:hover {
+    color: #ffffff;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+    color: #777;
+}
+/* ---------- HİZMETLERİMİZ SAYFASI STİLLERİ ---------- */
+
+.sayfa-aciklama {
+    max-width: 600px;
+    margin: 0 auto 50px auto; /* Üst, sağ-sol auto, alt, sol */
+    font-size: 18px;
+    color: #bbbbbb;
+}
+
+.hizmetler-grid {
+    display: grid;
+    /* Bu kod sayesinde ekran boyutuna göre kartlar 2'li ya da 3'lü dizilir */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Kartlar arası boşluk */
+    text-align: left;
+}
+
+.hizmet-karti {
+    background-color: #1f1f1f; /* Header ile aynı renk */
+    padding: 30px;
+    border-radius: 8px; /* Kenarları yuvarlaklaştır */
+    border: 1px solid #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hizmet-karti:hover {
+    transform: translateY(-5px); /* Üzerine gelince hafifçe yukarı kalksın */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hizmet-karti i {
+    font-size: 40px;
+    color: #e53935; /* Marka rengimiz (kırmızı) */
+    margin-bottom: 20px;
+}
+
+.hizmet-karti h3 {
+    font-size: 22px;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.hizmet-karti p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #bbbbbb;
+}
+/* ---------- HAKKIMIZDA SAYFASI STİLLERİ ---------- */
+
+.hakkimizda-icerik {
+    display: flex; /* İçindeki metin ve görseli yan yana getirir */
+    align-items: center; /* Dikey olarak ortalar */
+    gap: 50px; /* Aralarına boşluk bırakır */
+    margin-top: 50px;
+    text-align: left;
+}
+
+.hakkimizda-metin {
+    flex: 1.2; /* Metin alanını biraz daha geniş yapar (1.2 oranında) */
+}
+
+.hakkimizda-gorsel {
+    flex: 1; /* Görsel alanı (1 oranında) */
+}
+
+.hakkimizda-metin h3 {
+    font-size: 24px;
+    color: #ffffff;
+    border-left: 4px solid #e53935; /* Soluna kırmızı bir çizgi ekler */
+    padding-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.hakkimizda-metin p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #bbbbbb;
+}
+
+.hakkimizda-gorsel img {
+    width: 100%;
+    border-radius: 8px; /* Köşeleri yuvarlaklaştırır */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Telefon gibi küçük ekranlar için düzenleme */
+@media (max-width: 768px) {
+    .hakkimizda-icerik {
+        flex-direction: column; /* Yan yana duran sütunları alt alta getirir */
+    }
+}
+
+/* ---------- PROJELERİMİZ (GALERİ) SAYFASI STİLLERİ ---------- */
+
+.galeri-grid {
+    display: grid;
+    /* Ekran boyutuna göre 2'li ya da 3'lü dizilir */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.galeri-item {
+    position: relative; /* İçindeki overlay'i konumlandırmak için */
+    overflow: hidden; /* Taşan kısımları gizle */
+    border-radius: 8px;
+    cursor: pointer; /* Üzerine gelince el işareti çıksın */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.galeri-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resmin oranını bozmadan kutuya sığdırır */
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.galeri-item:hover img {
+    transform: scale(1.1); /* Resmin üzerine gelince %10 büyüsün */
+}
+
+.galeri-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(229, 57, 53, 0.8); /* Marka rengimiz olan kırmızının %80 şeffaf hali */
+    color: #ffffff;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0; /* Normalde görünmez */
+    transition: opacity 0.4s ease;
+}
+
+.galeri-item:hover .galeri-overlay {
+    opacity: 1; /* Resmin üzerine gelince görünür olsun */
+}
+
+.galeri-overlay i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.galeri-overlay p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* ---------- FİLTRE BUTONLARI STİLLERİ (Projelerimiz Sayfası) ---------- */
+
+#filtre-butonlari {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Küçük ekranlarda butonlar alt satıra kaysın */
+    gap: 15px; /* Butonlar arası boşluk */
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background-color: transparent;
+    border: 2px solid #555;
+    color: #bbb;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #e53935; /* Kırmızı renk */
+    border-color: #e53935;
+    color: #ffffff;
+}
+
+/* Aktif olan butonun stili */
+.filter-btn.active {
+    background-color: #e53935;
+    border-color: #e53935;
+    color: #ffffff;
+}
+
+/* ---------- PROJE SAYFASI BÖLÜM BAŞLIĞI ---------- */
+
+.proje-bolum-baslik {
+    font-size: 28px;
+    color: #ffffff;
+    text-align: left;
+    margin-top: 60px; /* Üstündekiyle arasını açar */
+    margin-bottom: 30px; /* Altındakiyle arasını açar */
+    border-bottom: 2px solid #e53935; /* Altına kırmızı şık bir çizgi */
+    padding-bottom: 15px;
+}
+
+/* ---------- İLETİŞİM SAYFASI STİLLERİ ---------- */
+
+.iletisim-icerik {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.iletisim-bilgileri {
+    flex: 1; /* Esnek genişlik, orana göre ayarlar */
+}
+
+.iletisim-harita {
+    flex: 1.5; /* Harita alanını biraz daha geniş yapar */
+}
+
+.iletisim-bilgileri h3 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.bilgi-item {
+    display: flex;
+    align-items: flex-start; /* İkonu ve metni yukarıdan hizalar */
+    margin-bottom: 25px;
+}
+
+.bilgi-item i {
+    font-size: 24px;
+    color: #e53935; /* Kırmızı renk */
+    width: 40px; /* İkonlar için sabit bir alan ayırır, hizalamayı düzgünleştirir */
+    margin-top: 5px;
+}
+
+.bilgi-item h4 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+    color: #f1f1f1;
+}
+
+.bilgi-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #bbbbbb;
+}
+
+.bilgi-item a {
+    color: #bbbbbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.bilgi-item a:hover {
+    color: #e53935;
+}
+
+.iletisim-harita iframe {
+    border-radius: 8px; /* Haritanın köşelerini yuvarlaklaştırır */
+}
+
+/* Telefon gibi küçük ekranlar için düzenleme */
+@media (max-width: 900px) {
+    .iletisim-icerik {
+        flex-direction: column; /* Yan yana duran sütunları alt alta getirir */
+    }
+}
+
+
+/* ---------- HARİTA BUTONU STİLİ (İletişim Sayfası) ---------- */
+
+.harita-buton {
+    display: inline-block; /* Buton gibi davranması için */
+    background-color: #e53935; /* Marka rengimiz */
+    color: #ffffff;
+    padding: 12px 25px;
+    margin-top: 20px; /* Haritayla arasına boşluk koy */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.harita-buton:hover {
+    background-color: #c42c28; /* Üzerine gelince biraz koyulaşsın */
+}
+
+.harita-buton i {
+    margin-right: 8px; /* İkonla yazı arasına boşluk koy */
+}
+
+
+
+/* ---------- ANA SAYFA - YENİ BÖLÜMLER ---------- */
+.hero { position: relative; height: 80vh; background-image: url('anasayfa-bg.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: #ffffff; }
+.hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6); }
+.hero-content { position: relative; z-index: 2; }
+.hero h1 { font-size: 56px; margin-bottom: 20px; font-weight: bold; }
+.hero p { font-size: 20px; max-width: 600px; margin: 0 auto 30px auto; }
+.hero-button { background-color: #e53935; color: #ffffff; padding: 15px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; font-size: 18px; transition: all 0.3s ease; }
+.hero-button:hover { background-color: #ffffff; color: #121212; }
+.ozellikler { padding: 80px 0; background-color: #1f1f1f; }
+.ozellikler .container { display: flex; justify-content: space-around; gap: 30px; text-align: center; }
+.ozellik-item i { font-size: 40px; color: #e53935; margin-bottom: 20px; }
+.ozellik-item h3 { font-size: 22px; margin-bottom: 10px; color: #ffffff; }
+.ozellik-item p { color: #bbbbbb; }
+.cta { padding: 80px 0; background-color: #e53935; color: #ffffff; text-align: center; }
+.cta h2 { font-size: 36px; margin-bottom: 15px; }
+.cta .hero-button { background-color: #ffffff; color: #121212; }
+.cta .hero-button:hover { background-color: #121212; color: #ffffff; }
+@media (max-width: 768px) { .ozellikler .container { flex-direction: column; } .hero h1 { font-size: 36px; } }

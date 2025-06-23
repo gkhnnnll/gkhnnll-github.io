@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Çetin Elektronik - Ana Sayfa</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- İKON KÜTÜPHANESİ (YENİ EKLEDİK) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- FANCYBOX KÜTÜPHANESİ (YENİ EKLEDİK) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo-container">
+                <img src="images/logo.png" alt="Çetin Elektronik Logo">
+                <span>ÇETİN ELEKTRONİK</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+                    <li><a href="projelerimiz.html" class="active">Projelerimiz</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Projelerimiz ve Uygulamalarımız</h1>
+            <p class="sayfa-aciklama">Yaptığımız işlerden bazı örnekler. Bir projeye ait birden fazla fotoğrafı görmek için resme tıklayabilirsiniz.</p>
+    
+            <!-- =========== MULTİMEDYA UYGULAMALARI BÖLÜMÜ =========== -->
+            <h2 class="proje-bolum-baslik">Multimedya Uygulamaları</h2>
+            
+            <div class="galeri-grid">
+                
+                <!-- Proje: Chevrolet Cruze (2 Resim) -->
+                <a href="images/cruze-1.jpg" data-fancybox="cruze" class="galeri-item">
+                    <img src="images/cruze-1.jpg" alt="Chevrolet Cruze Multimedya Ekran">
+                    <div class="galeri-overlay"><i class="fa-solid fa-images"></i><p>Chevrolet Cruze</p></div>
+                </a>
+                <a href="images/cruze-2.jpg" data-fancybox="cruze" style="display:none;"></a>
+    
+                <!-- Proje: Renault Megane (2 Resim) -->
+                <a href="images/megane-1.jpg" data-fancybox="megane" class="galeri-item">
+                    <img src="images/megane-1.jpg" alt="Renault Megane Multimedya Ekran">
+                    <div class="galeri-overlay"><i class="fa-solid fa-images"></i><p>Renault Megane</p></div>
+                </a>
+                <a href="images/megane-2.jpg" data-fancybox="megane" style="display:none;"></a>
+    
+                <!-- Proje: Nissan Qashqai (1 Resim) -->
+                <a href="images/nissan-1.jpg" data-fancybox="nissan" class="galeri-item">
+                    <img src="images/nissan-1.jpg" alt="Nissan Qashqai Multimedya Ekran">
+                    <div class="galeri-overlay"><i class="fa-solid fa-image"></i><p>Nissan Qashqai</p></div>
+                </a>
+    
+                <!-- Proje: VW Polo (1 Resim) -->
+                <a href="images/polo-1.jpg" data-fancybox="polo" class="galeri-item">
+                    <img src="images/polo-1.jpg" alt="VW Polo Multimedya Ekran">
+                    <div class="galeri-overlay"><i class="fa-solid fa-image"></i><p>VW Polo</p></div>
+                </a>
+            </div> <!-- Multimedya galeri-grid bitti -->
+    
+                    <!-- =========== ARAÇ SES SİSTEMİ UYGULAMALARI BÖLÜMÜ (YENİ YAPI) =========== -->
+        <h2 class="proje-bolum-baslik">Araç Ses Sistemi Uygulamaları</h2>
+
+        <!-- === PROJE 1: Fiat Linea === -->
+        <h3 class="proje-alt-baslik">Fiat Linea Sistem Kurulumu</h3>
+        <div class="galeri-grid">
+            
+            <!-- Fiat Linea Projesine Ait Tüm Resimler (5 Resim) -->
+            <!-- Kapak fotoğrafı -->
+            <a href="images/ses1.jpg" data-fancybox="linea-sistem" class="galeri-item">
+                <img src="images/ses1.jpg" alt="Fiat Linea Genel Görünüm">
+                <div class="galeri-overlay"><i class="fa-solid fa-images"></i><p>Fiat Linea Projesi</p></div>
+            </a>
+            <!-- Diğer resimler (gizli) -->
+            <a href="images/ses2.jpg" data-fancybox="linea-sistem" style="display:none;"></a>
+            <a href="images/ses3.jpg" data-fancybox="linea-sistem" style="display:none;"></a>
+            <a href="images/ses5.jpg" data-fancybox="linea-sistem" style="display:none;"></a>
+
+        </div> <!-- Fiat Linea galeri-grid bitti -->
+
+
+        <!-- === BİR SONRAKİ ARAÇ PROJESİ BURAYA GELECEK === -->
+        <!--
+        <h3 class="proje-alt-baslik">VW Golf Ses Sistemi</h3>
+        <div class="galeri-grid">
+            <a href="images/golf-ses-1.jpg" data-fancybox="golf-sistem" class="galeri-item">
+                <img src="images/golf-ses-1.jpg" alt="VW Golf Ses Sistemi">
+                <div class="galeri-overlay"><i class="fa-solid fa-images"></i><p>VW Golf Projesi</p></div>
+            </a>
+            <a href="images/golf-ses-2.jpg" data-fancybox="golf-sistem" style="display:none;"></a>
+        </div>
+        -->
+
+
+    </div> <!-- container bitti -->
+</main>
+    
+    
+        </div> <!-- container bitti -->
+    </main>
+    
+            </div> <!-- galeri-grid bitti -->
+    
+            <!-- =========== SES SİSTEMLERİ BÖLÜMÜ (Gelecek için hazır) =========== -->
+            <!-- <h2 class="proje-bolum-baslik">Ses Sistemi Uygulamaları</h2>
+            <div class="galeri-grid">
+                 Buraya ses sistemi resimlerini aynı mantıkla ekleyebilirsin 
+            </div> -->
+    
+    
+        </div> <!-- container bitti -->
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-icerik">
+                <div class="adres">
+                    <h4>Adresimiz</h4>
+                    <p>Emirgazi, Şeyh Ulema Recep Ağa Cd. No:215-F, 42030 Karatay/Konya</p>
+                </div>
+                <div class="sosyal-medya">
+                    <h4>Bize Ulaşın</h4>
+                    <p>Telefon: <a href="tel:+905346339921">0534 633 99 21</a></p>
+                    <p>WhatsApp: <a href="https://wa.me/905346339921" target="_blank">WhatsApp'tan Yaz</a></p>
+                    <p>Instagram: <a href="https://www.instagram.com/cetinn.elektronik/" target="_blank">@cetinn.elektronik</a></p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2024 Çetin Elektronik Auto Music System. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+    ...
+</footer>
+
+<!-- FANCYBOX BAŞLATMA KODU -->
+<script>
+    Fancybox.bind("[data-fancybox]", {});
+  </script>
+
+<!-- FİLTRELEME GALERİSİ JAVASCRIPT KODU (YENİ EKLEDİK) -->
+<script>
+    // Gerekli elemanları seçelim
+    const filtreButonlari = document.querySelectorAll(".filter-btn");
+    const galeriItemleri = document.querySelectorAll(".galeri-item");
+
+    // Her bir butona tıklandığında ne olacağını söyleyelim
+    filtreButonlari.forEach(button => {
+        button.addEventListener("click", () => {
+            // Önce diğer butonlardaki 'active' sınıfını kaldıralım
+            filtreButonlari.forEach(btn => btn.classList.remove("active"));
+            // Sadece tıklanan butona 'active' sınıfını ekleyelim
+            button.classList.add("active");
+
+            const filtre = button.getAttribute("data-filter");
+
+            // Her bir galeri resmini kontrol edelim
+            galeriItemleri.forEach(item => {
+                const kategori = item.getAttribute("data-category");
+
+                // Eğer 'Tümü' seçildiyse veya resmin kategorisi filtreyle eşleşiyorsa göster
+                if (filtre === "all" || kategori === filtre) {
+                    item.style.display = "block"; // Göster
+                } else {
+                    item.style.display = "none"; // Gizle
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
+
+    
+
+
