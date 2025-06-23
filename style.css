@@ -478,3 +478,106 @@ footer {
         margin-right: 10px;
     }
 }
+
+
+/* ================================================= */
+/* === YENİ RESPONSIVE HEADER VE HAMBURGER MENÜ === */
+/* ================================================= */
+
+/* Masaüstü menüsü için varsayılanlar */
+nav .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav .nav-links li {
+    margin-left: 25px;
+}
+nav .nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+nav .nav-links a:hover {
+    color: #ffffff;
+    border-bottom-color: #e53935;
+}
+
+/* Aktif sayfa linkini belirtmek için (şimdilik JS ile yapalım) */
+/* nav ul li a.active { color: #ffffff; font-weight: bold; border-bottom-color: #e53935; } */
+
+/* Hamburger ikonu (Başlangıçta gizli) */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #ffffff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* ================================== */
+/* === MOBİL GÖRÜNÜM (850px altı) === */
+/* ================================== */
+@media screen and (max-width: 850px) {
+    /* Menü linklerini gizle */
+    nav .nav-links {
+        position: fixed; /* Ekranla birlikte kayar */
+        right: 0px;
+        top: 88px; /* Header yüksekliği kadar aşağıdan başlar */
+        background: #1f1f1f;
+        display: flex;
+        flex-direction: column; /* Linkleri alt alta dizer */
+        align-items: center;
+        width: 60%; /* Ekranın %60'ını kaplar */
+        height: 100vh;
+        transform: translateX(100%); /* Başlangıçta ekranın sağında, gizli */
+        transition: transform 0.5s ease-in;
+        padding-top: 40px;
+    }
+
+    /* Menü açıldığında görünecek hali */
+    .nav-links.nav-active {
+        transform: translateX(0%);
+    }
+
+    nav .nav-links li {
+        opacity: 0; /* Başlangıçta linkler görünmez */
+        margin: 20px 0;
+    }
+    
+    /* Hamburger ikonunu göster */
+    .hamburger {
+        display: block;
+    }
+
+    /* Hamburger ikonuna tıklandığında (çarpı işareti efekti) */
+    .toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .toggle .line2 {
+        opacity: 0;
+    }
+    .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+/* Linklerin animasyonlu bir şekilde görünmesi */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
