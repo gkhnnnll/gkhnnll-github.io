@@ -650,51 +650,114 @@ footer {
     color: #ffffff;
 }
 
-/* ======================================================= */
-/* === YENİ VE HAVALI "NEDEN BİZ?" BÖLÜMÜ STİLLERİ === */
-/* ======================================================= */
+/* ================================================= */
+/* === ANA SAYFA ORTA BÖLÜM - FİNAL TASARIM === */
+/* ================================================= */
 
 .ozellikler {
-    padding: 80px 0;
-    background-color: #121212; /* Arka planı biraz daha koyu yapalım ki kartlar öne çıksın */
+    padding: 100px 0;
+    background-color: #1f1f1f;
 }
 
-.ozellikler-grid {
-    display: grid;
-    /* Bu kod, kartları 3'lü, 2'li veya tekli olarak otomatik hizalar */
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px; /* Kartlar arası boşluk */
+.ozellikler-container {
+    display: flex;
+    align-items: flex-start; /* Sütunları yukarıdan hizala */
+    gap: 80px;
+}
+
+/* Sol Sütun: Öne Çıkan Hizmetler */
+.one-cikan-hizmetler {
+    flex-basis: 50%;
+}
+.ozellikler .section-title {
+    text-align: left;
+}
+
+
+.hizmet-link-item {
+    display: flex;
+    align-items: center;
+    background-color: #2c3e50; /* Koyu mavi-gri bir arka plan */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-left: 5px solid transparent;
+}
+.hizmet-link-item:hover {
+    transform: translateX(10px);
+    border-left-color: #e53935; /* Üzerine gelince solda kırmızı çizgi belirsin */
+}
+
+.hizmet-link-item > i:first-child { /* Ana ikon */
+    font-size: 32px;
+    color: #e53935;
+    margin-right: 20px;
+}
+.hizmet-link-item > i:last-child { /* Sağdaki ok ikonu */
+    font-size: 20px;
+    color: #7f8c8d;
+    margin-left: auto; /* Oku en sağa yaslar */
+}
+
+.hizmet-link-metin h3 {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+.hizmet-link-metin p {
+    color: #bdc3c7;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* Sağ Sütun: Neden Biz Kartları */
+.ozellikler-content {
+    flex-basis: 50%;
+    
 }
 
 .ozellik-item {
-    background-color: #1f1f1f; /* Kart arka planı */
-    padding: 40px 30px;
-    border-radius: 8px;
-    text-align: center;
-    border: 1px solid #333;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: default; /* Üzerine gelince normal imleç kalsın */
+    display: flex;
+    text-align: left;
+    margin-bottom: 40px;
 }
-
-.ozellik-item:hover {
-    transform: translateY(-10px); /* Üzerine gelince 10px yukarı kaysın */
-    box-shadow: 0 15px 30px rgba(229, 57, 53, 0.2); /* Arkasına kırmızı bir parlama efekti */
-}
-
 .ozellik-item i {
-    font-size: 48px;
-    color: #e53935; /* Kırmızı ikon rengi */
-    margin-bottom: 25px;
+    font-size: 36px;
+    color: #e53935;
+    margin-right: 20px;
 }
-
 .ozellik-item h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
-    color: #ffffff;
+    text-align: left;
+    margin: 0 0 8px 0;
+}
+.ozellik-item p {
+    text-align: left;
 }
 
-.ozellik-item p {
-    color: #bbbbbb;
-    line-height: 1.6;
-    font-size: 16px;
+/* MOBİL UYUM */
+@media (max-width: 900px) {
+    .ozellikler-container {
+        flex-direction: column;
+        gap: 60px;
+    }
+    .one-cikan-hizmetler .section-title {
+        text-align: center;
+    }
+}
+
+/* =============================== */
+/* === TASARIMCI İMZASI STİLİ === */
+/* =============================== */
+
+.designer-link {
+    color: #f1c40f; /* Logonun ve başlığın sarı rengi! */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.designer-link:hover {
+    color: #ffffff; /* Üzerine gelince beyaz olsun */
 }
