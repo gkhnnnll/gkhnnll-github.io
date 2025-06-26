@@ -761,3 +761,78 @@ footer {
 .designer-link:hover {
     color: #ffffff; /* Üzerine gelince beyaz olsun */
 }
+
+
+/* =========================================== */
+/* === ÜRÜN KATALOG SAYFASI STİLLERİ === */
+/* =========================================== */
+
+.urun-katalog-grid {
+    display: grid;
+    /* Ekran boyutuna göre otomatik olarak 4'lü, 3'lü, 2'li dizilir */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.urun-katalog-karti {
+    background-color: #ffffff; /* Kartlar beyaz olsun, temiz dursun */
+    border-radius: 8px;
+    overflow: hidden; /* Taşan kısımları (resim köşeleri) gizler */
+    display: flex;
+    flex-direction: column; /* İçeriği alt alta dizer */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.urun-katalog-karti:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.urun-resim-alan {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px; /* Tüm resim alanlarının yüksekliği aynı olsun */
+}
+
+.urun-resim-alan img {
+    max-width: 100%;
+    max-height: 220px;
+    object-fit: contain; /* Resmin oranını bozmadan sığdırır */
+}
+
+.urun-bilgi-alan {
+    padding: 20px;
+    border-top: 1px solid #e0e0e0;
+    text-align: left;
+    flex-grow: 1; /* Kartların alt kısımları aynı hizada biter */
+    background-color: #f9f9f9; /* Hafif bir gri arka plan */
+}
+
+.urun-marka {
+    font-size: 12px;
+    font-weight: bold;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.urun-isim {
+    font-size: 16px;
+    color: #2c3e50;
+    margin: 0 0 8px 0;
+    font-weight: bold;
+}
+
+.urun-aciklama {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+    line-height: 1.5;
+}

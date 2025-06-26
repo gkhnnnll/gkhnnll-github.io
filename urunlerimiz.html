@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullandığımız Markalar - Çetin Elektronik</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo-container">
+                <img src="images/logo.png" alt="Çetin Elektronik Logo">
+                <span>ÇETİN ELEKTRONİK</span>
+            </a>
+            <nav>
+                <ul> <!-- Eskiden burada 'nav-links' sınıfı vardı, artık yok, daha basit. -->
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+                    <li><a href="projelerimiz.html">Projelerimiz</a></li>
+                    <li><a href="urunlerimiz.html">Ürünlerimiz</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Ürünlerimiz</h1>
+            <p class="sayfa-aciklama">Montajlarımızda kullandığımız, kalitesine güvendiğimiz bazı ürünler.</p>
+            
+            <div class="urun-katalog-grid">
+                
+                <!-- Ürün 1 -->
+                <div class="urun-katalog-karti" data-aos="fade-up">
+                    <div class="urun-resim-alan">
+                        <!-- Buraya ürünün resmini koyacağız -->
+                        <img src="images/urunler/pioneer-cd-r55.jpg" alt="Pioneer CD-R55 Kumanda">
+                    </div>
+                    <div class="urun-bilgi-alan">
+                        <span class="urun-marka">PIONEER</span>
+                        <h3 class="urun-isim">Pioneer CD-R55</h3>
+                        <p class="urun-aciklama">Multimedya Uzaktan Kumanda</p>
+                    </div>
+                </div>
+    
+                <!-- Ürün 2 -->
+                <div class="urun-katalog-karti" data-aos="fade-up">
+                    <div class="urun-resim-alan">
+                        <img src="images/urunler/pioneer-cd-r310.jpg" alt="Pioneer CD-R310 Kumanda">
+                    </div>
+                    <div class="urun-bilgi-alan">
+                        <span class="urun-marka">PIONEER</span>
+                        <h3 class="urun-isim">Pioneer CD-R310</h3>
+                        <p class="urun-aciklama">Multimedya Uzaktan Kumanda</p>
+                    </div>
+                </div>
+    
+                <!-- Ürün 3 -->
+                <div class="urun-katalog-karti" data-aos="fade-up">
+                    <div class="urun-resim-alan">
+                        <img src="images/urunler/pioneer-mvh-s320bt.jpg" alt="Pioneer MVH-S320BT Oto Teyp">
+                    </div>
+                    <div class="urun-bilgi-alan">
+                        <span class="urun-marka">PIONEER</span>
+                        <h3 class="urun-isim">Pioneer MVH-S320BT</h3>
+                        <p class="urun-aciklama">Bluetooth USB'li Oto Teyp</p>
+                    </div>
+                </div>
+    
+                <!-- Ürün 4 -->
+                <div class="urun-katalog-karti" data-aos="fade-up">
+                    <div class="urun-resim-alan">
+                        <img src="images/urunler/pioneer-ts-a301tw.jpg" alt="Pioneer TS-A301TW Tweeter">
+                    </div>
+                    <div class="urun-bilgi-alan">
+                        <span class="urun-marka">PIONEER</span>
+                        <h3 class="urun-isim">Pioneer TS-A301TW</h3>
+                        <p class="urun-aciklama">450 Watt 20 mm Tweeter</p>
+                    </div>
+                </div>
+    
+                <!-- Buraya istediğin kadar ürün ekleyebilirsin... -->
+    
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer içeriği diğer sayfalarla aynı... Buraya kopyala-yapıştır yapabilirsin -->
+        <div class="container">
+            <div class="footer-icerik"> ... </div>
+            <div class="copyright"> ... </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script> AOS.init(); </script>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('nav');
+        hamburger.addEventListener('click', () => { hamburger.classList.toggle('active'); navMenu.classList.toggle('active'); });
+    </script>
+</body>
+</html>
