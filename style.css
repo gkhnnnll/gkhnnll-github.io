@@ -762,77 +762,78 @@ footer {
     color: #ffffff; /* Üzerine gelince beyaz olsun */
 }
 
-
 /* =========================================== */
-/* === ÜRÜN KATALOG SAYFASI STİLLERİ === */
+/* === ÜRÜN KATALOG SAYFASI - FİNAL VERSİYON === */
 /* =========================================== */
 
 .urun-katalog-grid {
     display: grid;
-    /* Ekran boyutuna göre otomatik olarak 4'lü, 3'lü, 2'li dizilir */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+    gap: 30px; /* Kartlar arası boşluğu biraz artırdım */
     margin-top: 50px;
 }
 
 .urun-katalog-karti {
-    background-color: #ffffff; /* Kartlar beyaz olsun, temiz dursun */
+    background-color: #ffffff; /* Kartın ana arka planı temiz, beyaz */
     border-radius: 8px;
-    overflow: hidden; /* Taşan kısımları (resim köşeleri) gizler */
+    overflow: hidden;
     display: flex;
-    flex-direction: column; /* İçeriği alt alta dizer */
+    flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.05); /* Başlangıçta hafif bir gölge */
 }
 
 .urun-katalog-karti:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0, 0.1); /* Üzerine gelince gölge artsın */
 }
 
 .urun-resim-alan {
-    background-color: #ffffff;
+    background-color: #ffffff; 
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 250px; /* Tüm resim alanlarının yüksekliği aynı olsun */
+    min-height: 250px;
+    border-bottom: 1px solid #f0f0f0; /* Resimle bilgi alanı arasına ince bir çizgi */
 }
 
 .urun-resim-alan img {
     max-width: 100%;
     max-height: 220px;
-    object-fit: contain; /* Resmin oranını bozmadan sığdırır */
+    object-fit: contain;
 }
 
 .urun-bilgi-alan {
     padding: 20px;
-    border-top: 1px solid #e0e0e0;
     text-align: left;
-    flex-grow: 1; /* Kartların alt kısımları aynı hizada biter */
-    background-color: #f9f9f9; /* Hafif bir gri arka plan */
+    background-color: #ffffff; /* Bilgi alanı da beyaz */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .urun-marka {
-    font-size: 12px;
+    font-size: 28px;
     font-weight: bold;
-    color: #777;
+    color: #FF2C2C; /* Koyu, yumuşak gri */
     text-transform: uppercase;
     letter-spacing: 1px;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
 .urun-isim {
-    font-size: 16px;
-    color: #2c3e50;
+    font-size: 25px;
+    color: #212529; /* Siyaha yakın koyu renk */
     margin: 0 0 8px 0;
-    font-weight: bold;
+    font-weight: 600; /* Kalın ama çok boğucu değil */
+    line-height: 1.4;
 }
 
 .urun-aciklama {
-    font-size: 14px;
-    color: #555;
+    font-size: 22px;
+    color: #495057; /* Okunaklı bir gri */
     margin: 0;
     line-height: 1.5;
 }
