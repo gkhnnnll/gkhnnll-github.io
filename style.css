@@ -837,3 +837,32 @@ footer {
     margin: 0;
     line-height: 1.5;
 }
+
+/* WhatsApp bilgi butonu stili */
+.whatsapp-btn {
+    display: block;
+    background-color: #e53935; /* Kırmızı, dikkat çekici */
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px; /* Üstündeki yazılarla arasını açar */
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #c42c28; /* Üzerine gelince biraz koyulaşsın */
+}
+
+/* Bilgi alanının içini ayarlamak için eklenen kural */
+.urun-bilgi-alan {
+    padding: 20px;
+    text-align: left;
+    background-color: #ffffff; /* Bilgi alanı da beyaz */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between; /* Bu, yazıları yukarı, butonu aşağı iter! */
+}
