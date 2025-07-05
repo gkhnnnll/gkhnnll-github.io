@@ -139,6 +139,38 @@ footer {
     font-size: 14px;
     color: #777;
 }
+/* Tüm butonlar için ortak stil */
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.primary-button {
+    background-color: #e53935;
+    color: white;
+    border: 2px solid #e53935;
+}
+
+.primary-button:hover {
+    background-color: #c62828;
+    border-color: #c62828;
+}
+
+.secondary-button {
+    background-color: transparent;
+    color: #e53935;
+    border: 2px solid #e53935;
+}
+
+.secondary-button:hover {
+    background-color: rgba(229, 57, 53, 0.1);
+}
+
 /* ---------- HİZMETLERİMİZ SAYFASI STİLLERİ ---------- */
 
 .sayfa-aciklama {
@@ -768,9 +800,9 @@ footer {
 
 .urun-katalog-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px; /* Kartlar arası boşluğu biraz artırdım */
-    margin-top: 50px;
+    /* Her kart min 150px olsun, bu sayede telefonda 2 tane yan yana sığar */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px; /* Aradaki boşluğu biraz azalttım, daha iyi durur */
 }
 
 .urun-katalog-karti {
@@ -865,4 +897,30 @@ footer {
     flex-direction: column;
     flex-grow: 1;
     justify-content: space-between; /* Bu, yazıları yukarı, butonu aşağı iter! */
+}
+
+/* Tüm form elemanları için temel stil */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #1f1f1f;
+    color: #e0e0e0;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #e53935;
+    outline: none;
+}
+
+textarea.form-control {
+    min-height: 150px;
+    resize: vertical;
 }
