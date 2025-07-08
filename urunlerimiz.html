@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
@@ -117,6 +116,16 @@
         .urun-detay-acilir li b { color: #212529; font-weight: 600; }
         .urun-detay-acilir p { font-size: 14px; margin: 15px 0 0; color: #555; }
         .urun-detay-acilir p b { display: block; margin-bottom: 5px; color: #212529; font-size: 16px; }
+        
+        /* Kategori başlıkları */
+        .kategori-baslik {
+            grid-column: 1 / -1;
+            font-size: 24px;
+            margin-top: 40px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e00505;
+            color: #333;
+        }
     </style>
 </head>
 <body>
@@ -152,35 +161,11 @@
             
             <div class="urun-katalog-grid">
                 
-                <!-- Ürün 1 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
-                    <div class="urun-resim-alan"><img src="images/urunler/Deaf Bonce-AP-M81AC.jpg" alt="Deaf Bonce Mid-Range Hoparlör"></div>
-                    <div class="urun-bilgi-alan">
-                        <div>
-                            <span class="urun-marka">Deaf Bonce</span>
-                            <h3 class="urun-isim">Apocalypse AP-M81AC</h3>
-                            <p class="urun-aciklama">Yüksek Performanslı Mid-Range</p>
-                        </div>
-                        <div class="urun-buton-grup">
-                            <button class="detay-btn">Detayları Gör</button>
-                            <a href="https://wa.me/905346339921?text=Merhaba, Deaf Bonce AP-M81AC ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
-                        </div>
-                    </div>
-                    <div class="urun-detay-acilir">
-                        <h4>Teknik Özellikler</h4>
-                        <ul>
-                            <li><b>Boyut:</b> 8 inç (20 cm)</li>
-                            <li><b>RMS Gücü:</b> 150W</li>
-                            <li><b>MAX Gücü:</b> 300W</li>
-                            <li><b>Empedans:</b> 4 Ohm</li>
-                            <li><b>Hassasiyet:</b> 95.00 dB</li>
-                        </ul>
-                        <p><b>Kullanım:</b> SPL (Yüksek Ses Seviyesi) odaklı profesyonel sistemler için tasarlanmıştır. Güçlü bir amfi ile beslenmelidir.</p>
-                    </div>
-                </div>
-    
-                <!-- Ürün 2 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
+                <!-- MULTİMEDYA VE TEYPLER KATEGORİSİ -->
+                <h2 class="kategori-baslik">Multimedya ve Teypler</h2>
+                
+                <!-- Ürün 1: Dynamat RK-210 Android Teyp -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="multimedya">
                     <div class="urun-resim-alan"><img src="images/urunler/DYNAMAT SMART MULTIMEDYA.jpg" alt="Dynamat 360° Döner Android teyp"></div>
                     <div class="urun-bilgi-alan">
                         <div>
@@ -206,37 +191,9 @@
                         <p><b>Özellikler:</b> 360° dönebilen ekran, Google Play Store desteği, GPS navigasyon, araç kamerası bağlantısı.</p>
                     </div>
                 </div>
-    
-                <!-- Ürün 3 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
-                    <div class="urun-resim-alan"><img src="images/urunler/EDİSON-ED-DX800M.jpg" alt="Edison Mono Amfi"></div>
-                    <div class="urun-bilgi-alan">
-                        <div>
-                            <span class="urun-marka">Edison</span>
-                            <h3 class="urun-isim">ED-DX800M</h3>
-                            <p class="urun-aciklama">Dijital 500 Watts Max Midranges 20 Cm</p>
-                        </div>
-                        <div class="urun-buton-grup">
-                            <button class="detay-btn">Detayları Gör</button>
-                            <a href="https://wa.me/905346339921?text=Merhaba, Edison ED-DX800M ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
-                        </div>
-                    </div>
-                    <div class="urun-detay-acilir">
-                        <h4>Teknik Özellikler</h4>
-                        <ul>
-                            <li><b>Çıkış Gücü:</b> 500W Max (4 Ohm)</li>
-                            <li><b>RMS Güç:</b> 250W x 1</li>
-                            <li><b>Sınıf:</b> Dijital Mono</li>
-                            <li><b>Frekans Yanıtı:</b> 20Hz - 250Hz</li>
-                            <li><b>Sinyal/Gürültü Oranı:</b> >90dB</li>
-                            <li><b>Boyutlar:</b> 230x150x50 mm</li>
-                        </ul>
-                        <p><b>Özellikler:</b> Düşük empedans korumalı, yüksek verimli dijital tasarım, kompakt boyutlar.</p>
-                    </div>
-                </div>
-    
-                <!-- Ürün 4 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
+                
+                <!-- Ürün 2: FOR-X XQ-7350 MP3 Player -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="multimedya">
                     <div class="urun-resim-alan"><img src="images/urunler/FOR-X XQ7350 CAR MP3 PLAYER.jpg" alt="For-X Oto Teyp"></div>
                     <div class="urun-bilgi-alan">
                         <div>
@@ -263,64 +220,8 @@
                     </div>
                 </div>
                 
-                <!-- Ürün 5 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
-                    <div class="urun-resim-alan"><img src="images/urunler/JBL 30CM KABİN BASS 1000 WATTS.jpg" alt="JBL 30cm Subwoofer"></div>
-                    <div class="urun-bilgi-alan">
-                        <div>
-                            <span class="urun-marka">JBL</span>
-                            <h3 class="urun-isim">30cm Kabinli Subwoofer</h3>
-                            <p class="urun-aciklama">1000 Watt Bass</p>
-                        </div>
-                        <div class="urun-buton-grup">
-                            <button class="detay-btn">Detayları Gör</button>
-                            <a href="https://wa.me/905346339921?text=Merhaba, JBL 30cm Subwoofer ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
-                        </div>
-                    </div>
-                    <div class="urun-detay-acilir">
-                        <h4>Teknik Özellikler</h4>
-                        <ul>
-                            <li><b>Boyut:</b> 12 inç (30 cm)</li>
-                            <li><b>RMS Güç:</b> 500W</li>
-                            <li><b>Max Güç:</b> 1000W</li>
-                            <li><b>Empedans:</b> 4 Ohm</li>
-                            <li><b>Frekans Aralığı:</b> 20Hz - 500Hz</li>
-                            <li><b>Kabin Tipi:</b> Portlu Bass Reflex</li>
-                        </ul>
-                        <p><b>Özellikler:</b> Özel tasarım bas portu ile derin baslar, profesyonel ses kalitesi, dayanıklı kabin yapısı.</p>
-                    </div>
-                </div>
-    
-                <!-- Ürün 6 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
-                    <div class="urun-resim-alan"><img src="images/urunler/MOBASS MBM-116.jpg" alt="Mobass Mid-Range Hoparlör"></div>
-                    <div class="urun-bilgi-alan">
-                        <div>
-                            <span class="urun-marka">Mobass</span>
-                            <h3 class="urun-isim">MBM-116 Mid-Range</h3>
-                            <p class="urun-aciklama">Profesyonel Mid-Range Takımı 16 Cm</p>
-                        </div>
-                        <div class="urun-buton-grup">
-                            <button class="detay-btn">Detayları Gör</button>
-                            <a href="https://wa.me/905346339921?text=Merhaba, Mobass MBM-116 ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
-                        </div>
-                    </div>
-                    <div class="urun-detay-acilir">
-                        <h4>Teknik Özellikler</h4>
-                        <ul>
-                            <li><b>Boyut:</b> 6.5 inç (16 cm)</li>
-                            <li><b>RMS Güç:</b> 100W</li>
-                            <li><b>Max Güç:</b> 200W</li>
-                            <li><b>Empedans:</b> 4 Ohm</li>
-                            <li><b>Frekans Aralığı:</b> 80Hz - 5kHz</li>
-                            <li><b>Hassasiyet:</b> 92dB</li>
-                        </ul>
-                        <p><b>Özellikler:</b> Alüminyum döküm çerçeve, yüksek sıcaklığa dayanıklı ses bobini, özel tasarım mıknatıs sistemi.</p>
-                    </div>
-                </div>
-    
-                <!-- Ürün 7 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
+                <!-- Ürün 3: Navisun Multimedya -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="multimedya">
                     <div class="urun-resim-alan"><img src="images/urunler/NAVISUN-MULTIMEDYA.jpg" alt="Navisun Multimedya Ekran"></div>
                     <div class="urun-bilgi-alan">
                         <div>
@@ -346,37 +247,9 @@
                         <p><b>Özellikler:</b> Orijinal araç kontrolleri desteği, 360° kamera bağlantısı, tam HD video oynatma, ses kontrol yazılımı.</p>
                     </div>
                 </div>
-    
-                <!-- Ürün 8 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
-                    <div class="urun-resim-alan"><img src="images/urunler/PİLİPPO PO1200 4X200W.jpg" alt="Pilippo 4 Kanal Amfi"></div>
-                    <div class="urun-bilgi-alan">
-                        <div>
-                            <span class="urun-marka">Pilippo</span>
-                            <h3 class="urun-isim">PO1200 4 Kanal Amfi</h3>
-                            <p class="urun-aciklama">4 x 200W Stereo Amfi</p>
-                        </div>
-                        <div class="urun-buton-grup">
-                            <button class="detay-btn">Detayları Gör</button>
-                            <a href="https://wa.me/905346339921?text=Merhaba, Pilippo PO1200 Amfi ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
-                        </div>
-                    </div>
-                    <div class="urun-detay-acilir">
-                        <h4>Teknik Özellikler</h4>
-                        <ul>
-                            <li><b>Çıkış Gücü:</b> 4x200W Max (4 Ohm)</li>
-                            <li><b>RMS Güç:</b> 4x100W</li>
-                            <li><b>Sınıf:</b> AB</li>
-                            <li><b>Frekans Yanıtı:</b> 20Hz - 20kHz</li>
-                            <li><b>Sinyal/Gürültü Oranı:</b> >95dB</li>
-                            <li><b>Boyutlar:</b> 300x200x60 mm</li>
-                        </ul>
-                        <p><b>Özellikler:</b> Yüksek akım kapasitesi, düşük distorsiyon, fan soğutmalı tasarım, crossover ayarları.</p>
-                    </div>
-                </div>
                 
-                <!-- Ürün 9 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
+                <!-- Ürün 4: Pioneer DEH-S520BT -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="multimedya">
                     <div class="urun-resim-alan"><img src="images/urunler/PIONEER-DEH-S520BT.jpg" alt="Pioneer Oto Teyp"></div>
                     <div class="urun-bilgi-alan">
                         <div>
@@ -402,9 +275,318 @@
                         <p><b>Özellikler:</b> Telefon görüşmesi desteği, ses ayar yazılımı, uzaktan kumanda, 13-band grafik ekolayzır.</p>
                     </div>
                 </div>
-    
-                <!-- Ürün 10 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
+                
+                <!-- Ürün 5: Soundway SW-9000 İndech -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="multimedya">
+                    <div class="urun-resim-alan"><img src="images/urunler/SOUNDWAY-SW9000.jpg" alt="Soundway Multimedya Ekran"></div>
+                    <div class="urun-bilgi-alan">
+                        <div>
+                            <span class="urun-marka">Soundway</span>
+                            <h3 class="urun-isim">SW-9000 İndech</h3>
+                            <p class="urun-aciklama">Geniş Girer Çıkar Ekran Sistemi</p>
+                        </div>
+                        <div class="urun-buton-grup">
+                            <button class="detay-btn">Detayları Gör</button>
+                            <a href="https://wa.me/905346339921?text=Merhaba, Soundway SW-9000 ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
+                        </div>
+                    </div>
+                    <div class="urun-detay-acilir">
+                        <h4>Teknik Özellikler</h4>
+                        <ul>
+                            <li><b>Ekran:</b> 9 inç HD Dokunmatik</li>
+                            <li><b>İşletim Sistemi:</b> Android 10</li>
+                            <li><b>İşlemci:</b> Quad Core 1.8GHz</li>
+                            <li><b>RAM:</b> 3GB</li>
+                            <li><b>Depolama:</b> 32GB</li>
+                            <li><b>Bağlantı:</b> Bluetooth, WiFi, USB</li>
+                        </ul>
+                        <p><b>Özellikler:</b> Otomatik girer-çıkar mekanizma, araç kamera desteği, GPS navigasyon, telefon görüşmesi desteği.</p>
+                    </div>
+                </div>
+                
+                <!-- Ürün 6: Navisun Hitech Serisi Multimedya -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="multimedya">
+                    <div class="urun-resim-alan"><img src="images/urunler/navisun hitech ekran.jpg" alt="Navisun Hitech Multimedya"></div>
+                    <div class="urun-bilgi-alan">
+                        <div>
+                            <span class="urun-marka">Navisun</span>
+                            <h3 class="urun-isim">Hitech Serisi Multimedya</h3>
+                            <p class="urun-aciklama">10 İnç Android Oynar Başlıklı Multimedya Ekran</p>
+                        </div>
+                        <div class="urun-buton-grup">
+                            <button class="detay-btn">Detayları Gör</button>
+                            <a href="https://wa.me/905346339921?text=Merhaba, Navisun Hitech ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
+                        </div>
+                    </div>
+                    <div class="urun-detay-acilir">
+                        <h4>Teknik Özellikler</h4>
+                        <ul>
+                            <li><b>Ekran:</b> 10.1 inç Full HD Dokunmatik</li>
+                            <li><b>İşletim Sistemi:</b> Android 11</li>
+                            <li><b>İşlemci:</b> Octa Core 2.0GHz</li>
+                            <li><b>RAM:</b> 4GB</li>
+                            <li><b>Depolama:</b> 64GB</li>
+                            <li><b>Bağlantı:</b> Bluetooth 5.0, WiFi, 4G LTE</li>
+                        </ul>
+                        <p><b>Özellikler:</b> Oynar başlıklı tasarım, araç orijinal fonksiyon desteği, 360° kamera bağlantısı, yüksek çözünürlüklü ekran.</p>
+                    </div>
+                </div>
+                
+                <!-- Ürün 7: FOR-X X-4550BT MP3 Player -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="multimedya">
+                    <div class="urun-resim-alan"><img src="images/urunler/FOR-X 4550BT CAR MP3 PLAYER.jpg" alt="FOR-X 4550BT Oto Teyp"></div>
+                    <div class="urun-bilgi-alan">
+                        <div>
+                            <span class="urun-marka">FOR-X</span>
+                            <h3 class="urun-isim">X-4550BT MP3 Player</h3>
+                            <p class="urun-aciklama">4x60W Max Power Bluetooth'lu Teyp</p>
+                        </div>
+                        <div class="urun-buton-grup">
+                            <button class="detay-btn">Detayları Gör</button>
+                            <a href="https://wa.me/905346339921?text=Merhaba, FOR-X 4550BT ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
+                        </div>
+                    </div>
+                    <div class="urun-detay-acilir">
+                        <h4>Teknik Özellikler</h4>
+                        <ul>
+                            <li><b>Çıkış Gücü:</b> 4x60W Max</li>
+                            <li><b>Bluetooth:</b> V5.0</li>
+                            <li><b>USB:</b> MP3/WMA Oynatma</li>
+                            <li><b>Radyo:</b> FM/AM Tuner</li>
+                            <li><b>Ekran:</b> LED Display</li>
+                            <li><b>Girişler:</b> AUX, USB, Micro SD</li>
+                        </ul>
+                        <p><b>Özellikler:</b> Telefon görüşmesi desteği, uzaktan kumanda ile kontrol, kompakt tasarım, yüksek güç çıkışı.</p>
+                    </div>
+                </div>
+                
+                <!-- Ürün 8: FOR-X X-9104A 360° Dönebilen Ekran -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="multimedya">
+                    <div class="urun-resim-alan"><img src="images/urunler/FOR-X ONE DIN X-9104A 360° DENEBİLEN ANDROID MULTİMEDYA.jpg" alt="FOR-X Dönebilen Android Multimedya"></div>
+                    <div class="urun-bilgi-alan">
+                        <div>
+                            <span class="urun-marka">FOR-X</span>
+                            <h3 class="urun-isim">X-9104A 360° Dönebilen Ekran</h3>
+                            <p class="urun-aciklama">One Din Android Multimedya</p>
+                        </div>
+                        <div class="urun-buton-grup">
+                            <button class="detay-btn">Detayları Gör</button>
+                            <a href="https://wa.me/905346339921?text=Merhaba, FOR-X X-9104A ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
+                        </div>
+                    </div>
+                    <div class="urun-detay-acilir">
+                        <h4>Teknik Özellikler</h4>
+                        <ul>
+                            <li><b>Ekran:</b> 9 inç HD Dokunmatik</li>
+                            <li><b>İşletim Sistemi:</b> Android 10</li>
+                            <li><b>İşlemci:</b> Quad Core 1.8GHz</li>
+                            <li><b>RAM:</b> 3GB</li>
+                            <li><b>Depolama:</b> 32GB</li>
+                            <li><b>Bağlantı:</b> Bluetooth, WiFi, USB</li>
+                        </ul>
+                        <p><b>Özellikler:</b> 360° dönebilen ekran, tek DIN slotuna uyumlu, araç kamera desteği, GPS navigasyon, telefon görüşmesi desteği.</p>
+                    </div>
+                </div>
+                
+                <!-- Ürün 9: Sunsay Teyp Çeşitleri -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="multimedya">
+                    <div class="urun-resim-alan"><img src="images/urunler/SUNSAY TEYP ÇEŞİTLERİ.jpg" alt="Sunsay Teyp Çeşitleri"></div>
+                    <div class="urun-bilgi-alan">
+                        <div>
+                            <span class="urun-marka">Sunsay</span>
+                            <h3 class="urun-isim">Oto Teyp Çeşitleri</h3>
+                            <p class="urun-aciklama">Farklı modellere uygun teyp çözümleri</p>
+                        </div>
+                        <div class="urun-buton-grup">
+                            <button class="detay-btn">Detayları Gör</button>
+                            <a href="https://wa.me/905346339921?text=Merhaba, Sunsay teyp çeşitleri hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
+                        </div>
+                    </div>
+                    <div class="urun-detay-acilir">
+                        <h4>Teknik Özellikler</h4>
+                        <ul>
+                            <li><b>Çıkış Gücü:</b> 4x50W - 4x100W arası modeller</li>
+                            <li><b>Medya:</b> USB, AUX, Bluetooth</li>
+                            <li><b>Ekran:</b> LED veya LCD seçenekleri</li>
+                            <li><b>Radyo:</b> FM/AM Tuner</li>
+                            <li><b>Bağlantı:</b> Bluetooth, USB, AUX</li>
+                        </ul>
+                        <p><b>Özellikler:</b> Farklı araç modellerine uygun çeşitli teyp seçenekleri, telefon görüşmesi desteği, uzaktan kumanda ile kontrol.</p>
+                    </div>
+                </div>
+                
+                <!-- Ürün 10: Reiss Audio RS-MX88DSP Teyp -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="multimedya">
+                    <div class="urun-resim-alan"><img src="images/urunler/REISS AUDIO RS-MX88DSP TEYP.jpg" alt="Reiss Audio DSP'li Teyp"></div>
+                    <div class="urun-bilgi-alan">
+                        <div>
+                            <span class="urun-marka">Reiss Audio</span>
+                            <h3 class="urun-isim">RS-MX88DSP Teyp</h3>
+                            <p class="urun-aciklama">Dahili Ses İşlemcili Profesyonel Teyp</p>
+                        </div>
+                        <div class="urun-buton-grup">
+                            <button class="detay-btn">Detayları Gör</button>
+                            <a href="https://wa.me/905346339921?text=Merhaba, Reiss Audio RS-MX88DSP ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
+                        </div>
+                    </div>
+                    <div class="urun-detay-acilir">
+                        <h4>Teknik Özellikler</h4>
+                        <ul>
+                            <li><b>Çıkış Gücü:</b> 4x50W RMS</li>
+                            <li><b>DSP:</b> 8 Band EQ, Time Alignment</li>
+                            <li><b>Bluetooth:</b> V5.0</li>
+                            <li><b>Ekran:</b> 3.5" TFT Dokunmatik</li>
+                            <li><b>Girişler:</b> USB, AUX, RCA</li>
+                            <li><b>Radyo:</b> FM/AM Tuner</li>
+                        </ul>
+                        <p><b>Özellikler:</b> Dahili dijital ses işlemci (DSP), yüksek çözünürlüklü ekran, telefon görüşmesi desteği, profesyonel ses ayarları.</p>
+                    </div>
+                </div>
+                
+                <!-- Ürün 11: Soundway SW-2501 Bluetooth Teyp -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="multimedya">
+                    <div class="urun-resim-alan"><img src="images/urunler/SOUNDWAY SW2501 BLUETOOTH TEYP.jpg" alt="Soundway Bluetooth Teyp"></div>
+                    <div class="urun-bilgi-alan">
+                        <div>
+                            <span class="urun-marka">Soundway</span>
+                            <h3 class="urun-isim">SW-2501 Bluetooth Teyp</h3>
+                            <p class="urun-aciklama">FM/MP3/USB/AUX Destekli Oto Teyp</p>
+                        </div>
+                        <div class="urun-buton-grup">
+                            <button class="detay-btn">Detayları Gör</button>
+                            <a href="https://wa.me/905346339921?text=Merhaba, Soundway SW-2501 ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
+                        </div>
+                    </div>
+                    <div class="urun-detay-acilir">
+                        <h4>Teknik Özellikler</h4>
+                        <ul>
+                            <li><b>Çıkış Gücü:</b> 4x50W Max</li>
+                            <li><b>Bluetooth:</b> V5.0</li>
+                            <li><b>USB:</b> MP3/WMA Oynatma</li>
+                            <li><b>Radyo:</b> FM/AM Tuner</li>
+                            <li><b>Ekran:</b> LED Display</li>
+                            <li><b>Girişler:</b> AUX, USB, Micro SD</li>
+                        </ul>
+                        <p><b>Özellikler:</b> Telefon görüşmesi desteği, uzaktan kumanda ile kontrol, kompakt tasarım, yüksek güç çıkışı.</p>
+                    </div>
+                </div>
+                
+                <!-- Ürün 12: Sunplus SP-500 Double Teyp -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="multimedya">
+                    <div class="urun-resim-alan"><img src="images/urunler/SUNPLUS SP-500 DOUBLE TEYP.jpg" alt="Sunplus Double Teyp"></div>
+                    <div class="urun-bilgi-alan">
+                        <div>
+                            <span class="urun-marka">Sunplus</span>
+                            <h3 class="urun-isim">SP-500 Double Teyp</h3>
+                            <p class="urun-aciklama">7" Single Din MP5 Player</p>
+                        </div>
+                        <div class="urun-buton-grup">
+                            <button class="detay-btn">Detayları Gör</button>
+                            <a href="https://wa.me/905346339921?text=Merhaba, Sunplus SP-500 ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
+                        </div>
+                    </div>
+                    <div class="urun-detay-acilir">
+                        <h4>Teknik Özellikler</h4>
+                        <ul>
+                            <li><b>Ekran:</b> 7 inç Dokunmatik</li>
+                            <li><b>Medya:</b> USB, SD Kart, AUX</li>
+                            <li><b>Video Formatları:</b> MP4, AVI, MKV</li>
+                            <li><b>Çıkış Gücü:</b> 4x50W Max</li>
+                            <li><b>Radyo:</b> FM/AM Tuner</li>
+                            <li><b>Bluetooth:</b> V4.2</li>
+                        </ul>
+                        <p><b>Özellikler:</b> Single DIN slotuna uyumlu geniş ekran, video oynatma desteği, telefon görüşmesi desteği, uzaktan kumanda.</p>
+                    </div>
+                </div>
+                
+                <!-- Ürün 13: Soundway QLED Multimedya Ekran -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="multimedya">
+                    <div class="urun-resim-alan"><img src="images\urunler\SOUNDWAY QLED multimedya Ekran.jpg" alt="Soundway QLED Multimedya"></div>
+                    <div class="urun-bilgi-alan">
+                        <div>
+                            <span class="urun-marka">Soundway</span>
+                            <h3 class="urun-isim">QLED Multimedya Ekran</h3>
+                            <p class="urun-aciklama">Quad Core (4 Çekirdek) İşlemcili</p>
+                        </div>
+                        <div class="urun-buton-grup">
+                            <button class="detay-btn">Detayları Gör</button>
+                            <a href="https://wa.me/905346339921?text=Merhaba, Soundway QLED Multimedya ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
+                        </div>
+                    </div>
+                    <div class="urun-detay-acilir">
+                        <h4>Teknik Özellikler</h4>
+                        <ul>
+                            <li><b>Ekran:</b> 10.1 inç QLED Dokunmatik</li>
+                            <li><b>İşletim Sistemi:</b> Android 11</li>
+                            <li><b>İşlemci:</b> Quad Core 2.0GHz</li>
+                            <li><b>RAM:</b> 4GB</li>
+                            <li><b>Depolama:</b> 64GB</li>
+                            <li><b>Bağlantı:</b> Bluetooth, WiFi, 4G LTE</li>
+                        </ul>
+                        <p><b>Özellikler:</b> Yüksek kaliteli QLED ekran, araç orijinal fonksiyon desteği, 360° kamera bağlantısı, yüksek çözünürlüklü video oynatma.</p>
+                    </div>
+                </div>
+                
+                <!-- HOPARLÖRLER KATEGORİSİ -->
+                <h2 class="kategori-baslik">Hoparlörler</h2>
+                
+                <!-- Ürün 14: Deaf Bonce Apocalypse AP-M81AC -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="hoparlor">
+                    <div class="urun-resim-alan"><img src="images/urunler/Deaf Bonce-AP-M81AC.jpg" alt="Deaf Bonce Mid-Range Hoparlör"></div>
+                    <div class="urun-bilgi-alan">
+                        <div>
+                            <span class="urun-marka">Deaf Bonce</span>
+                            <h3 class="urun-isim">Apocalypse AP-M81AC</h3>
+                            <p class="urun-aciklama">Yüksek Performanslı Mid-Range</p>
+                        </div>
+                        <div class="urun-buton-grup">
+                            <button class="detay-btn">Detayları Gör</button>
+                            <a href="https://wa.me/905346339921?text=Merhaba, Deaf Bonce AP-M81AC ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
+                        </div>
+                    </div>
+                    <div class="urun-detay-acilir">
+                        <h4>Teknik Özellikler</h4>
+                        <ul>
+                            <li><b>Boyut:</b> 8 inç (20 cm)</li>
+                            <li><b>RMS Gücü:</b> 150W</li>
+                            <li><b>MAX Gücü:</b> 300W</li>
+                            <li><b>Empedans:</b> 4 Ohm</li>
+                            <li><b>Hassasiyet:</b> 95.00 dB</li>
+                        </ul>
+                        <p><b>Kullanım:</b> SPL (Yüksek Ses Seviyesi) odaklı profesyonel sistemler için tasarlanmıştır. Güçlü bir amfi ile beslenmelidir.</p>
+                    </div>
+                </div>
+                
+                <!-- Ürün 15: Mobass MBM-116 Mid-Range -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="hoparlor">
+                    <div class="urun-resim-alan"><img src="images/urunler/MOBASS MBM-116.jpg" alt="Mobass Mid-Range Hoparlör"></div>
+                    <div class="urun-bilgi-alan">
+                        <div>
+                            <span class="urun-marka">Mobass</span>
+                            <h3 class="urun-isim">MBM-116 Mid-Range</h3>
+                            <p class="urun-aciklama">Profesyonel Mid-Range Takımı 16 Cm</p>
+                        </div>
+                        <div class="urun-buton-grup">
+                            <button class="detay-btn">Detayları Gör</button>
+                            <a href="https://wa.me/905346339921?text=Merhaba, Mobass MBM-116 ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
+                        </div>
+                    </div>
+                    <div class="urun-detay-acilir">
+                        <h4>Teknik Özellikler</h4>
+                        <ul>
+                            <li><b>Boyut:</b> 6.5 inç (16 cm)</li>
+                            <li><b>RMS Güç:</b> 100W</li>
+                            <li><b>Max Güç:</b> 200W</li>
+                            <li><b>Empedans:</b> 4 Ohm</li>
+                            <li><b>Frekans Aralığı:</b> 80Hz - 5kHz</li>
+                            <li><b>Hassasiyet:</b> 92dB</li>
+                        </ul>
+                        <p><b>Özellikler:</b> Alüminyum döküm çerçeve, yüksek sıcaklığa dayanıklı ses bobini, özel tasarım mıknatıs sistemi.</p>
+                    </div>
+                </div>
+                
+                <!-- Ürün 16: Reiss Audio RS-M8DF Mid-Range -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="hoparlor">
                     <div class="urun-resim-alan"><img src="images/urunler/reiss-audio-RS-M8DF.jpg" alt="Reiss Audio Mid-Range"></div>
                     <div class="urun-bilgi-alan">
                         <div>
@@ -430,9 +612,9 @@
                         <p><b>Özellikler:</b> Alüminyum koni, yüksek sıcaklığa dayanıklı ses bobini, güçlü mıknatıs sistemi, yüksek verim.</p>
                     </div>
                 </div>
-    
-                <!-- Ürün 11 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
+                
+                <!-- Ürün 17: Reiss Audio RS-M8NX Mid-Range -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="hoparlor">
                     <div class="urun-resim-alan"><img src="images/urunler/reiss-audio-RS-M8NX-400W.jpg" alt="Reiss Audio Tweeter Seti"></div>
                     <div class="urun-bilgi-alan">
                         <div>
@@ -459,36 +641,8 @@
                     </div>
                 </div>
                 
-                <!-- Ürün 12 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
-                    <div class="urun-resim-alan"><img src="images/urunler/SOUNDWAY-SW9000.jpg" alt="Soundway Multimedya Ekran"></div>
-                    <div class="urun-bilgi-alan">
-                        <div>
-                            <span class="urun-marka">Soundway</span>
-                            <h3 class="urun-isim">SW-9000 İndech</h3>
-                            <p class="urun-aciklama">Geniş Girer Çıkar Ekran Sistemi</p>
-                        </div>
-                        <div class="urun-buton-grup">
-                            <button class="detay-btn">Detayları Gör</button>
-                            <a href="https://wa.me/905346339921?text=Merhaba, Soundway SW-9000 ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
-                        </div>
-                    </div>
-                    <div class="urun-detay-acilir">
-                        <h4>Teknik Özellikler</h4>
-                        <ul>
-                            <li><b>Ekran:</b> 9 inç HD Dokunmatik</li>
-                            <li><b>İşletim Sistemi:</b> Android 10</li>
-                            <li><b>İşlemci:</b> Quad Core 1.8GHz</li>
-                            <li><b>RAM:</b> 3GB</li>
-                            <li><b>Depolama:</b> 32GB</li>
-                            <li><b>Bağlantı:</b> Bluetooth, WiFi, USB</li>
-                        </ul>
-                        <p><b>Özellikler:</b> Otomatik girer-çıkar mekanizma, araç kamera desteği, GPS navigasyon, telefon görüşmesi desteği.</p>
-                    </div>
-                </div>
-    
-                <!-- Ürün 13 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
+                <!-- Ürün 18: Reiss Audio RS-M69Y Oval Hoparlör -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="hoparlor">
                     <div class="urun-resim-alan"><img src="images/urunler/REISS RS-M69Y 250W.jpg" alt="Reiss Audio Oval Hoparlör"></div>
                     <div class="urun-bilgi-alan">
                         <div>
@@ -514,9 +668,9 @@
                         <p><b>Özellikler:</b> Özel tasarım oval koni, yüksek sıcaklığa dayanıklı ses bobini, geniş frekans aralığı.</p>
                     </div>
                 </div>
-    
-                <!-- Ürün 14 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
+                
+                <!-- Ürün 19: Cadence CVL65 Mid-Range Takımı -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="hoparlor">
                     <div class="urun-resim-alan"><img src="images/urunler/Cadence CVL65 Hapörler.jpg" alt="Cadence Mid-Range Hoparlör"></div>
                     <div class="urun-bilgi-alan">
                         <div>
@@ -542,37 +696,9 @@
                         <p><b>Özellikler:</b> Profesyonel yarışma serisi, alüminyum alaşımlı koni, titanyum ses bobini, yüksek verimli tasarım.</p>
                     </div>
                 </div>
-    
-                <!-- Ürün 15 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
-                    <div class="urun-resim-alan"><img src="images/urunler/navisun hitech ekran.jpg" alt="Navisun Hitech Multimedya"></div>
-                    <div class="urun-bilgi-alan">
-                        <div>
-                            <span class="urun-marka">Navisun</span>
-                            <h3 class="urun-isim">Hitech Serisi Multimedya</h3>
-                            <p class="urun-aciklama">10 İnç Android Oynar Başlıklı Multimedya Ekran</p>
-                        </div>
-                        <div class="urun-buton-grup">
-                            <button class="detay-btn">Detayları Gör</button>
-                            <a href="https://wa.me/905346339921?text=Merhaba, Navisun Hitech ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
-                        </div>
-                    </div>
-                    <div class="urun-detay-acilir">
-                        <h4>Teknik Özellikler</h4>
-                        <ul>
-                            <li><b>Ekran:</b> 10.1 inç Full HD Dokunmatik</li>
-                            <li><b>İşletim Sistemi:</b> Android 11</li>
-                            <li><b>İşlemci:</b> Octa Core 2.0GHz</li>
-                            <li><b>RAM:</b> 4GB</li>
-                            <li><b>Depolama:</b> 64GB</li>
-                            <li><b>Bağlantı:</b> Bluetooth 5.0, WiFi, 4G LTE</li>
-                        </ul>
-                        <p><b>Özellikler:</b> Oynar başlıklı tasarım, araç orijinal fonksiyon desteği, 360° kamera bağlantısı, yüksek çözünürlüklü ekran.</p>
-                    </div>
-                </div>
-    
-                <!-- Ürün 16 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
+                
+                <!-- Ürün 20: Reiss Audio RS-M55YNS Mid-Range -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="hoparlor">
                     <div class="urun-resim-alan"><img src="images/urunler/REISS RS-M55YNS 300W.jpg" alt="Reiss Audio Mid-Range Hoparlör"></div>
                     <div class="urun-bilgi-alan">
                         <div>
@@ -599,8 +725,8 @@
                     </div>
                 </div>
                 
-                <!-- Ürün 17 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
+                <!-- Ürün 21: Deaf Bonce Apocalypse AP-M81AC Arnold -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="hoparlor">
                     <div class="urun-resim-alan"><img src="images/urunler/DEAF BONCE APOCALYPSE MIDRANGE SPEAKERS AP-M81AC ARNOLD.jpg" alt="Deaf Bonce Apocalypse Arnold Serisi"></div>
                     <div class="urun-bilgi-alan">
                         <div>
@@ -626,92 +752,9 @@
                         <p><b>Özellikler:</b> Yarışma serisi profesyonel hoparlör, özel tasarım mıknatıs sistemi, yüksek sıcaklığa dayanıklı ses bobini, alüminyum koni.</p>
                     </div>
                 </div>
-
-                <!-- Ürün 18 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
-                    <div class="urun-resim-alan"><img src="images/urunler/FOR-X 4550BT CAR MP3 PLAYER.jpg" alt="FOR-X 4550BT Oto Teyp"></div>
-                    <div class="urun-bilgi-alan">
-                        <div>
-                            <span class="urun-marka">FOR-X</span>
-                            <h3 class="urun-isim">X-4550BT MP3 Player</h3>
-                            <p class="urun-aciklama">4x60W Max Power Bluetooth'lu Teyp</p>
-                        </div>
-                        <div class="urun-buton-grup">
-                            <button class="detay-btn">Detayları Gör</button>
-                            <a href="https://wa.me/905346339921?text=Merhaba, FOR-X 4550BT ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
-                        </div>
-                    </div>
-                    <div class="urun-detay-acilir">
-                        <h4>Teknik Özellikler</h4>
-                        <ul>
-                            <li><b>Çıkış Gücü:</b> 4x60W Max</li>
-                            <li><b>Bluetooth:</b> V5.0</li>
-                            <li><b>USB:</b> MP3/WMA Oynatma</li>
-                            <li><b>Radyo:</b> FM/AM Tuner</li>
-                            <li><b>Ekran:</b> LED Display</li>
-                            <li><b>Girişler:</b> AUX, USB, Micro SD</li>
-                        </ul>
-                        <p><b>Özellikler:</b> Telefon görüşmesi desteği, uzaktan kumanda ile kontrol, kompakt tasarım, yüksek güç çıkışı.</p>
-                    </div>
-                </div>
-
-                <!-- Ürün 19 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
-                    <div class="urun-resim-alan"><img src="images/urunler/FOR-X ONE DIN X-9104A 360° DENEBİLEN ANDROID MULTİMEDYA.jpg" alt="FOR-X Dönebilen Android Multimedya"></div>
-                    <div class="urun-bilgi-alan">
-                        <div>
-                            <span class="urun-marka">FOR-X</span>
-                            <h3 class="urun-isim">X-9104A 360° Dönebilen Ekran</h3>
-                            <p class="urun-aciklama">One Din Android Multimedya</p>
-                        </div>
-                        <div class="urun-buton-grup">
-                            <button class="detay-btn">Detayları Gör</button>
-                            <a href="https://wa.me/905346339921?text=Merhaba, FOR-X X-9104A ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
-                        </div>
-                    </div>
-                    <div class="urun-detay-acilir">
-                        <h4>Teknik Özellikler</h4>
-                        <ul>
-                            <li><b>Ekran:</b> 9 inç HD Dokunmatik</li>
-                            <li><b>İşletim Sistemi:</b> Android 10</li>
-                            <li><b>İşlemci:</b> Quad Core 1.8GHz</li>
-                            <li><b>RAM:</b> 3GB</li>
-                            <li><b>Depolama:</b> 32GB</li>
-                            <li><b>Bağlantı:</b> Bluetooth, WiFi, USB</li>
-                        </ul>
-                        <p><b>Özellikler:</b> 360° dönebilen ekran, tek DIN slotuna uyumlu, araç kamera desteği, GPS navigasyon, telefon görüşmesi desteği.</p>
-                    </div>
-                </div>
-
-                <!-- Ürün 20 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
-                    <div class="urun-resim-alan"><img src="images/urunler/SUNSAY TEYP ÇEŞİTLERİ.jpg" alt="Sunsay Teyp Çeşitleri"></div>
-                    <div class="urun-bilgi-alan">
-                        <div>
-                            <span class="urun-marka">Sunsay</span>
-                            <h3 class="urun-isim">Oto Teyp Çeşitleri</h3>
-                            <p class="urun-aciklama">Farklı modellere uygun teyp çözümleri</p>
-                        </div>
-                        <div class="urun-buton-grup">
-                            <button class="detay-btn">Detayları Gör</button>
-                            <a href="https://wa.me/905346339921?text=Merhaba, Sunsay teyp çeşitleri hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
-                        </div>
-                    </div>
-                    <div class="urun-detay-acilir">
-                        <h4>Teknik Özellikler</h4>
-                        <ul>
-                            <li><b>Çıkış Gücü:</b> 4x50W - 4x100W arası modeller</li>
-                            <li><b>Medya:</b> USB, AUX, Bluetooth</li>
-                            <li><b>Ekran:</b> LED veya LCD seçenekleri</li>
-                            <li><b>Radyo:</b> FM/AM Tuner</li>
-                            <li><b>Bağlantı:</b> Bluetooth, USB, AUX</li>
-                        </ul>
-                        <p><b>Özellikler:</b> Farklı araç modellerine uygun çeşitli teyp seçenekleri, telefon görüşmesi desteği, uzaktan kumanda ile kontrol.</p>
-                    </div>
-                </div>
-
-                <!-- Ürün 21 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
+                
+                <!-- Ürün 22: Reiss Audio RS-M5NX 13cm Mid-Range -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="hoparlor">
                     <div class="urun-resim-alan"><img src="images/urunler/REISS AUDIO RS -M5NX 13 CM MIDRANGE 160W.jpg" alt="Reiss Audio 13cm Mid-Range"></div>
                     <div class="urun-bilgi-alan">
                         <div>
@@ -737,37 +780,95 @@
                         <p><b>Özellikler:</b> Kompakt boyutlarda yüksek performans, alüminyum koni, yüksek sıcaklığa dayanıklı ses bobini.</p>
                     </div>
                 </div>
-
-                <!-- Ürün 22 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
-                    <div class="urun-resim-alan"><img src="images/urunler/REISS AUDIO RS-MX88DSP TEYP.jpg" alt="Reiss Audio DSP'li Teyp"></div>
+                
+                <!-- Ürün 23: Reiss Audio M84VB 20cm Midrange -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="hoparlor">
+                    <div class="urun-resim-alan"><img src="images/urunler/REISS AUDIO 20 CM MIDRANGE M84VB 750W.jpg" alt="Reiss Audio M84VB Midrange"></div>
                     <div class="urun-bilgi-alan">
                         <div>
                             <span class="urun-marka">Reiss Audio</span>
-                            <h3 class="urun-isim">RS-MX88DSP Teyp</h3>
-                            <p class="urun-aciklama">Dahili Ses İşlemcili Profesyonel Teyp</p>
+                            <h3 class="urun-isim">M84VB 20cm Midrange</h3>
+                            <p class="urun-aciklama">750W Yüksek Güçlü Profesyonel Hoparlör</p>
                         </div>
                         <div class="urun-buton-grup">
                             <button class="detay-btn">Detayları Gör</button>
-                            <a href="https://wa.me/905346339921?text=Merhaba, Reiss Audio RS-MX88DSP ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
+                            <a href="https://wa.me/905346339921?text=Merhaba, Reiss Audio M84VB ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
                         </div>
                     </div>
                     <div class="urun-detay-acilir">
                         <h4>Teknik Özellikler</h4>
                         <ul>
-                            <li><b>Çıkış Gücü:</b> 4x50W RMS</li>
-                            <li><b>DSP:</b> 8 Band EQ, Time Alignment</li>
-                            <li><b>Bluetooth:</b> V5.0</li>
-                            <li><b>Ekran:</b> 3.5" TFT Dokunmatik</li>
-                            <li><b>Girişler:</b> USB, AUX, RCA</li>
-                            <li><b>Radyo:</b> FM/AM Tuner</li>
+                            <li><b>Boyut:</b> 8 inç (20 cm)</li>
+                            <li><b>RMS Gücü:</b> 250W</li>
+                            <li><b>MAX Gücü:</b> 750W</li>
+                            <li><b>Empedans:</b> 4 Ohm</li>
+                            <li><b>Hassasiyet:</b> 94 dB</li>
                         </ul>
-                        <p><b>Özellikler:</b> Dahili dijital ses işlemci (DSP), yüksek çözünürlüklü ekran, telefon görüşmesi desteği, profesyonel ses ayarları.</p>
+                        <p><b>Kullanım:</b> Çok yüksek ses seviyelerine çıkabilen, net ve güçlü vokal performansı için tasarlanmış profesyonel bir midrange hoparlördür. Özellikle SPL sistemlerinde ve güçlü amfilerle kullanım için idealdir.</p>
                     </div>
                 </div>
-
-                <!-- Ürün 23 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
+                
+                <!-- AMFİLER KATEGORİSİ -->
+                <h2 class="kategori-baslik">Amfiler</h2>
+                
+                <!-- Ürün 24: Edison ED-DX800M -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="amfi">
+                    <div class="urun-resim-alan"><img src="images/urunler/EDİSON-ED-DX800M.jpg" alt="Edison Mono Amfi"></div>
+                    <div class="urun-bilgi-alan">
+                        <div>
+                            <span class="urun-marka">Edison</span>
+                            <h3 class="urun-isim">ED-DX800M</h3>
+                            <p class="urun-aciklama">Dijital 500 Watts Max Midranges 20 Cm</p>
+                        </div>
+                        <div class="urun-buton-grup">
+                            <button class="detay-btn">Detayları Gör</button>
+                            <a href="https://wa.me/905346339921?text=Merhaba, Edison ED-DX800M ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
+                        </div>
+                    </div>
+                    <div class="urun-detay-acilir">
+                        <h4>Teknik Özellikler</h4>
+                        <ul>
+                            <li><b>Çıkış Gücü:</b> 500W Max (4 Ohm)</li>
+                            <li><b>RMS Güç:</b> 250W x 1</li>
+                            <li><b>Sınıf:</b> Dijital Mono</li>
+                            <li><b>Frekans Yanıtı:</b> 20Hz - 250Hz</li>
+                            <li><b>Sinyal/Gürültü Oranı:</b> >90dB</li>
+                            <li><b>Boyutlar:</b> 230x150x50 mm</li>
+                        </ul>
+                        <p><b>Özellikler:</b> Düşük empedans korumalı, yüksek verimli dijital tasarım, kompakt boyutlar.</p>
+                    </div>
+                </div>
+                
+                <!-- Ürün 25: Pilippo PO1200 4 Kanal Amfi -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="amfi">
+                    <div class="urun-resim-alan"><img src="images/urunler/PİLİPPO PO1200 4X200W.jpg" alt="Pilippo 4 Kanal Amfi"></div>
+                    <div class="urun-bilgi-alan">
+                        <div>
+                            <span class="urun-marka">Pilippo</span>
+                            <h3 class="urun-isim">PO1200 4 Kanal Amfi</h3>
+                            <p class="urun-aciklama">4 x 200W Stereo Amfi</p>
+                        </div>
+                        <div class="urun-buton-grup">
+                            <button class="detay-btn">Detayları Gör</button>
+                            <a href="https://wa.me/905346339921?text=Merhaba, Pilippo PO1200 Amfi ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
+                        </div>
+                    </div>
+                    <div class="urun-detay-acilir">
+                        <h4>Teknik Özellikler</h4>
+                        <ul>
+                            <li><b>Çıkış Gücü:</b> 4x200W Max (4 Ohm)</li>
+                            <li><b>RMS Güç:</b> 4x100W</li>
+                            <li><b>Sınıf:</b> AB</li>
+                            <li><b>Frekans Yanıtı:</b> 20Hz - 20kHz</li>
+                            <li><b>Sinyal/Gürültü Oranı:</b> >95dB</li>
+                            <li><b>Boyutlar:</b> 300x200x60 mm</li>
+                        </ul>
+                        <p><b>Özellikler:</b> Yüksek akım kapasitesi, düşük distorsiyon, fan soğutmalı tasarım, crossover ayarları.</p>
+                    </div>
+                </div>
+                
+                <!-- Ürün 26: Reiss Audio RS-Q300.4D 4 Kanal Amfi -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="amfi">
                     <div class="urun-resim-alan"><img src="images/urunler/REİSS AUDİO RS-Q300.4D 4KANAL PROFESYONEL OTO AMFİ.jpg" alt="Reiss Audio 4 Kanal Amfi"></div>
                     <div class="urun-bilgi-alan">
                         <div>
@@ -793,37 +894,9 @@
                         <p><b>Özellikler:</b> Yüksek verimli D sınıfı tasarım, düşük distorsiyon, fan soğutmalı, crossover ayarları, yüksek akım kapasitesi.</p>
                     </div>
                 </div>
-
-                <!-- Ürün 24 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
-                    <div class="urun-resim-alan"><img src="images/urunler/REISS AUDIO RS-UX12 1000W 30 CM SUBWOOFER.JPG" alt="Reiss Audio Subwoofer"></div>
-                    <div class="urun-bilgi-alan">
-                        <div>
-                            <span class="urun-marka">Reiss Audio</span>
-                            <h3 class="urun-isim">RS-UX12 Subwoofer</h3>
-                            <p class="urun-aciklama">1000W 30cm Yüksek Performanslı Bass</p>
-                        </div>
-                        <div class="urun-buton-grup">
-                            <button class="detay-btn">Detayları Gör</button>
-                            <a href="https://wa.me/905346339921?text=Merhaba, Reiss Audio RS-UX12 Subwoofer ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
-                        </div>
-                    </div>
-                    <div class="urun-detay-acilir">
-                        <h4>Teknik Özellikler</h4>
-                        <ul>
-                            <li><b>Boyut:</b> 12 inç (30 cm)</li>
-                            <li><b>RMS Güç:</b> 500W</li>
-                            <li><b>Max Güç:</b> 1000W</li>
-                            <li><b>Empedans:</b> 4 Ohm</li>
-                            <li><b>Frekans Aralığı:</b> 20Hz - 500Hz</li>
-                            <li><b>Hassasiyet:</b> 88dB</li>
-                        </ul>
-                        <p><b>Özellikler:</b> Çift ses bobini tasarım, yüksek sıcaklığa dayanıklı malzemeler, derin baslar için özel tasarım koni.</p>
-                    </div>
-                </div>
-
-                <!-- Ürün 25 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
+                
+                <!-- Ürün 27: Soundmax SX-N1000.1D Mono Amfi -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="amfi">
                     <div class="urun-resim-alan"><img src="images/urunler/SOUNDMAX SX-N1000.1D MONO CLASS AMFİ 1000WX1.jpg" alt="Soundmax Mono Amfi"></div>
                     <div class="urun-bilgi-alan">
                         <div>
@@ -849,161 +922,130 @@
                         <p><b>Özellikler:</b> Yüksek verimli D sınıfı tasarım, düşük empedans korumalı, bass boost kontrolü, fan soğutmalı.</p>
                     </div>
                 </div>
-
-                <!-- Ürün 26 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
-                    <div class="urun-resim-alan"><img src="images\urunler\SOUNDWAY QLED multimedya Ekran.jpg" alt="Soundway QLED Multimedya"></div>
+                
+                <!-- SUBWOOFER'LAR KATEGORİSİ -->
+                <h2 class="kategori-baslik">Subwoofer'lar</h2>
+                
+                <!-- Ürün 28: JBL 30cm Kabinli Subwoofer -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="subwoofer">
+                    <div class="urun-resim-alan"><img src="images/urunler/JBL 30CM KABİN BASS 1000 WATTS.jpg" alt="JBL 30cm Subwoofer"></div>
                     <div class="urun-bilgi-alan">
                         <div>
-                            <span class="urun-marka">Soundway</span>
-                            <h3 class="urun-isim">QLED Multimedya Ekran</h3>
-                            <p class="urun-aciklama">Quad Core (4 Çekirdek) İşlemcili</p>
+                            <span class="urun-marka">JBL</span>
+                            <h3 class="urun-isim">30cm Kabinli Subwoofer</h3>
+                            <p class="urun-aciklama">1000 Watt Bass</p>
                         </div>
                         <div class="urun-buton-grup">
                             <button class="detay-btn">Detayları Gör</button>
-                            <a href="https://wa.me/905346339921?text=Merhaba, Soundway QLED Multimedya ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
+                            <a href="https://wa.me/905346339921?text=Merhaba, JBL 30cm Subwoofer ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
                         </div>
                     </div>
                     <div class="urun-detay-acilir">
                         <h4>Teknik Özellikler</h4>
                         <ul>
-                            <li><b>Ekran:</b> 10.1 inç QLED Dokunmatik</li>
-                            <li><b>İşletim Sistemi:</b> Android 11</li>
-                            <li><b>İşlemci:</b> Quad Core 2.0GHz</li>
-                            <li><b>RAM:</b> 4GB</li>
-                            <li><b>Depolama:</b> 64GB</li>
-                            <li><b>Bağlantı:</b> Bluetooth, WiFi, 4G LTE</li>
+                            <li><b>Boyut:</b> 12 inç (30 cm)</li>
+                            <li><b>RMS Güç:</b> 500W</li>
+                            <li><b>Max Güç:</b> 1000W</li>
+                            <li><b>Empedans:</b> 4 Ohm</li>
+                            <li><b>Frekans Aralığı:</b> 20Hz - 500Hz</li>
+                            <li><b>Kabin Tipi:</b> Portlu Bass Reflex</li>
                         </ul>
-                        <p><b>Özellikler:</b> Yüksek kaliteli QLED ekran, araç orijinal fonksiyon desteği, 360° kamera bağlantısı, yüksek çözünürlüklü video oynatma.</p>
+                        <p><b>Özellikler:</b> Özel tasarım bas portu ile derin baslar, profesyonel ses kalitesi, dayanıklı kabin yapısı.</p>
                     </div>
                 </div>
-
-                <!-- Ürün 27 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
-                    <div class="urun-resim-alan"><img src="images/urunler/SOUNDWAY SW2501 BLUETOOTH TEYP.jpg" alt="Soundway Bluetooth Teyp"></div>
+                
+                <!-- Ürün 29: Reiss Audio RS-UX12 Subwoofer -->
+                <div class="urun-katalog-karti" data-aos="fade-up" data-category="subwoofer">
+                    <div class="urun-resim-alan"><img src="images/urunler/REISS AUDIO RS-UX12 1000W 30 CM SUBWOOFER.JPG" alt="Reiss Audio Subwoofer"></div>
                     <div class="urun-bilgi-alan">
                         <div>
-                            <span class="urun-marka">Soundway</span>
-                            <h3 class="urun-isim">SW-2501 Bluetooth Teyp</h3>
-                            <p class="urun-aciklama">FM/MP3/USB/AUX Destekli Oto Teyp</p>
+                            <span class="urun-marka">Reiss Audio</span>
+                            <h3 class="urun-isim">RS-UX12 Subwoofer</h3>
+                            <p class="urun-aciklama">1000W 30cm Yüksek Performanslı Bass</p>
                         </div>
                         <div class="urun-buton-grup">
                             <button class="detay-btn">Detayları Gör</button>
-                            <a href="https://wa.me/905346339921?text=Merhaba, Soundway SW-2501 ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
+                            <a href="https://wa.me/905346339921?text=Merhaba, Reiss Audio RS-UX12 Subwoofer ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
                         </div>
                     </div>
                     <div class="urun-detay-acilir">
                         <h4>Teknik Özellikler</h4>
                         <ul>
-                            <li><b>Çıkış Gücü:</b> 4x50W Max</li>
-                            <li><b>Bluetooth:</b> V5.0</li>
-                            <li><b>USB:</b> MP3/WMA Oynatma</li>
-                            <li><b>Radyo:</b> FM/AM Tuner</li>
-                            <li><b>Ekran:</b> LED Display</li>
-                            <li><b>Girişler:</b> AUX, USB, Micro SD</li>
+                            <li><b>Boyut:</b> 12 inç (30 cm)</li>
+                            <li><b>RMS Güç:</b> 500W</li>
+                            <li><b>Max Güç:</b> 1000W</li>
+                            <li><b>Empedans:</b> 4 Ohm</li>
+                            <li><b>Frekans Aralığı:</b> 20Hz - 500Hz</li>
+                            <li><b>Hassasiyet:</b> 88dB</li>
                         </ul>
-                        <p><b>Özellikler:</b> Telefon görüşmesi desteği, uzaktan kumanda ile kontrol, kompakt tasarım, yüksek güç çıkışı.</p>
+                        <p><b>Özellikler:</b> Çift ses bobini tasarım, yüksek sıcaklığa dayanıklı malzemeler, derin baslar için özel tasarım koni.</p>
                     </div>
                 </div>
-
-                <!-- Ürün 28 -->
-                <div class="urun-katalog-karti" data-aos="fade-up">
-                    <div class="urun-resim-alan"><img src="images/urunler/SUNPLUS SP-500 DOUBLE TEYP.jpg" alt="Sunplus Double Teyp"></div>
-                    <div class="urun-bilgi-alan">
-                        <div>
-                            <span class="urun-marka">Sunplus</span>
-                            <h3 class="urun-isim">SP-500 Double Teyp</h3>
-                            <p class="urun-aciklama">7" Single Din MP5 Player</p>
-                        </div>
-                        <div class="urun-buton-grup">
-                            <button class="detay-btn">Detayları Gör</button>
-                            <a href="https://wa.me/905346339921?text=Merhaba, Sunplus SP-500 ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
-                        </div>
-                    </div>
-                    <div class="urun-detay-acilir">
-                        <h4>Teknik Özellikler</h4>
-                        <ul>
-                            <li><b>Ekran:</b> 7 inç Dokunmatik</li>
-                            <li><b>Medya:</b> USB, SD Kart, AUX</li>
-                            <li><b>Video Formatları:</b> MP4, AVI, MKV</li>
-                            <li><b>Çıkış Gücü:</b> 4x50W Max</li>
-                            <li><b>Radyo:</b> FM/AM Tuner</li>
-                            <li><b>Bluetooth:</b> V4.2</li>
-                        </ul>
-                        <p><b>Özellikler:</b> Single DIN slotuna uyumlu geniş ekran, video oynatma desteği, telefon görüşmesi desteği, uzaktan kumanda.</p>
-                    </div>
-                </div>
-                            <!-- Ürün 29: REISS AUDIO M84VB -->
-            <div class="urun-katalog-karti" data-aos="fade-up">
-                <div class="urun-resim-alan"><img src="images/urunler/REISS AUDIO 20 CM MIDRANGE M84VB 750W.jpg" alt="Reiss Audio M84VB Midrange"></div>
-                <div class="urun-bilgi-alan">
-                    <div>
-                        <span class="urun-marka">Reiss Audio</span>
-                        <h3 class="urun-isim">M84VB 20cm Midrange</h3>
-                        <p class="urun-aciklama">750W Yüksek Güçlü Profesyonel Hoparlör</p>
-                    </div>
-                    <div class="urun-buton-grup">
-                        <button class="detay-btn">Detayları Gör</button>
-                        <a href="https://wa.me/905346339921?text=Merhaba, Reiss Audio M84VB ürünü hakkında bilgi almak istiyorum." target="_blank" class="whatsapp-btn-kucuk">Fiyat İçin Yazın</a>
-                    </div>
-                </div>
-                <div class="urun-detay-acilir">
-                    <h4>Teknik Özellikler</h4>
-                    <ul>
-                        <li><b>Boyut:</b> 8 inç (20 cm)</li>
-                        <li><b>RMS Gücü:</b> 250W</li>
-                        <li><b>MAX Gücü:</b> 750W</li>
-                        <li><b>Empedans:</b> 4 Ohm</li>
-                        <li><b>Hassasiyet:</b> 94 dB</li>
-                    </ul>
-                    <p><b>Kullanım:</b> Çok yüksek ses seviyelerine çıkabilen, net ve güçlü vokal performansı için tasarlanmış profesyonel bir midrange hoparlördür. Özellikle SPL sistemlerinde ve güçlü amfilerle kullanım için idealdir.</p>
-                </div>
-            </div>
-    
+                
             </div>
         </div>
     </main>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        // AOS Animasyonları
-        AOS.init({ duration: 800, once: true });
+<script>
+    // 1. AOS Animasyonları Başlatma
+    AOS.init({ duration: 800, once: true });
 
-        // Mobil Menü (Bu JS eski olabilir, günceli ana stil dosyasında)
-        const hamburger = document.querySelector('.mobile-nav-toggle');
-        const navMenu = document.querySelector('#navbar');
-        if (hamburger) {
-            hamburger.addEventListener('click', () => {
-                navMenu.classList.toggle('navbar-mobile');
-                hamburger.classList.toggle('fa-bars');
-                hamburger.classList.toggle('fa-xmark');
-            });
-        }
-        
-        // Ürün Detay Butonları (GARANTİLİ ÇALIŞAN)
-        document.querySelectorAll('.detay-btn').forEach(button => {
-            button.addEventListener('click', function() {
-                const kart = this.closest('.urun-katalog-karti');
-                const detayDiv = kart.querySelector('.urun-detay-acilir');
+    // 2. Mobil Menü Aç/Kapat
+    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+    const navbar = document.querySelector('#navbar');
+    if (mobileNavToggle) {
+        mobileNavToggle.addEventListener('click', function() {
+            navbar.classList.toggle('navbar-mobile');
+            this.classList.toggle('fa-bars');
+            this.classList.toggle('fa-xmark');
+        });
+    }
+    
+    // 3. Ürün Detay Butonları Aç/Kapat
+    document.querySelectorAll('.detay-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            const kart = this.closest('.urun-katalog-karti');
+            
+            if (kart.classList.contains('detay-acik')) {
+                kart.classList.remove('detay-acik');
+                this.innerHTML = 'Detayları Gör';
+            } else {
+                document.querySelectorAll('.urun-katalog-karti.detay-acik').forEach(acikKart => {
+                    acikKart.classList.remove('detay-acik');
+                    acikKart.querySelector('.detay-btn').innerHTML = 'Detayları Gör';
+                });
                 
-                // Eğer bu kart zaten açıksa, sadece bunu kapat
-                if (kart.classList.contains('detay-acik')) {
-                    kart.classList.remove('detay-acik');
-                    this.innerHTML = 'Detayları Gör';
+                kart.classList.add('detay-acik');
+                this.innerHTML = 'Detayları Kapat';
+            }
+        });
+    });
+
+    // 4. Ürün Filtreleme Scripti
+    const filtreButonlari = document.querySelectorAll('.urun-filter-btn');
+    const urunKartlari = document.querySelectorAll('.urun-katalog-karti');
+    filtreButonlari.forEach(button => {
+        button.addEventListener('click', () => {
+            filtreButonlari.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const filtre = button.dataset.filter;
+
+            urunKartlari.forEach(kart => {
+                // Filtreleme yaparken animasyonları yeniden tetikle
+                kart.classList.remove('aos-animate');
+                
+                if (filtre === 'all' || kart.dataset.category === filtre) {
+                    kart.style.display = 'flex';
+                    setTimeout(() => { kart.classList.add('aos-animate'); }, 50);
                 } else {
-                    // Değilse, önce diğer tüm açık kartları kapat
-                    document.querySelectorAll('.urun-katalog-karti.detay-acik').forEach(acikKart => {
-                        acikKart.classList.remove('detay-acik');
-                        acikKart.querySelector('.detay-btn').innerHTML = 'Detayları Gör';
-                    });
-                    
-                    // Sonra bu kartı aç
-                    kart.classList.add('detay-acik');
-                    this.innerHTML = 'Detayları Kapat';
+                    kart.style.display = 'none';
                 }
             });
         });
-    </script>
+    });
+</script>
     
     <footer>
         <div class="container">
@@ -1027,5 +1069,7 @@
             </div>
         </div>
     </footer>
+    
+    
 </body>
 </html>

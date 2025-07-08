@@ -916,3 +916,33 @@ a.galeri-item:hover .galeri-overlay { opacity: 1; }
     gap: 30px; /* Kartlar arası boşluk */
     margin-top: 50px;
 }
+
+/* Ürünler Sayfası Filtre Butonları */
+#urun-filtre-butonlari {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+.urun-filter-btn {
+    background-color: var(--light-bg);
+    border: 1px solid #444;
+    color: var(--text-light);
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.urun-filter-btn:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+}
+.urun-filter-btn.active { /* Aktif olan butonun stili */
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #ffffff;
+}

@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Çetin Elektronik - Auto Music System Uzmanı</title>
+    <title>Çetin Elektronik | Oto Müzik ve Multimedya Sistemleri</title>
+    <meta name="description" content="Çetin Elektronik: Konya'da oto müzik, multimedya, ses sistemleri ve 7/24 yol yardım hizmetleri. Kaliteli ürün, profesyonel montaj, müşteri memnuniyeti.">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <div class="container">
-            <a href="index.html" class="logo-container">
+        <div class="container header-container">
+            <a href="index.html" class="logo-container" aria-label="Çetin Elektronik Ana Sayfa">
                 <img src="images/logo.png" alt="Çetin Elektronik Logo">
                 <span>ÇETİN ELEKTRONİK</span>
             </a>
             <nav>
-                <ul> <!-- Eskiden burada 'nav-links' sınıfı vardı, artık yok, daha basit. -->
+                <ul class="nav-links">
                     <li><a href="index.html">Ana Sayfa</a></li>
                     <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
                     <li><a href="projelerimiz.html">Projelerimiz</a></li>
@@ -27,136 +27,127 @@
                     <li><a href="iletisim.html">İletişim</a></li>
                 </ul>
             </nav>
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
+            <button class="hamburger" aria-label="Menüyü Aç/Kapat" aria-expanded="false" aria-controls="nav-menu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
         </div>
     </header>
-    <!-- HERO BÖLÜMÜ BAŞLANGICI -->
-    <section class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content container">
-            <h1>Müziği Hissedin, Teknolojiyi Yaşayın</h1>
-            <p>Aracınız için en kaliteli ses ve multimedya sistemlerini profesyonel işçilikle buluşturuyoruz.</p>
-            <a href="projelerimiz.html" class="hero-button">Projelerimizi İncele</a>
-        </div>
-    </section>
-    <!-- HERO BÖLÜMÜ BİTİŞİ -->
 
-    <!-- "NEDEN BİZ?" VE "ÖNE ÇIKAN HİZMETLER" BÖLÜMÜ (GARANTİLİ ÇALIŞAN VERSİYON) -->
-<section class="ozellikler">
-    <div class="container ozellikler-container">
-        
-        <!-- Sol Sütun: Öne Çıkan Hizmetler -->
-        <div class="one-cikan-hizmetler" data-aos="fade-right">
-            <h2 class="section-title">Başlıca Hizmetlerimiz</h2>
-            
-            <a href="hizmetlerimiz.html" class="hizmet-link-item">
-                <i class="fa-solid fa-mobile-screen-button"></i>
-                <div class="hizmet-link-metin">
-                    <h3>Multimedya Sistemleri</h3>
-                    <p>Android ekranlar ve navigasyon çözümleri.</p>
+    <main>
+        <!-- HERO BÖLÜMÜ -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <h1>Müziği Hissedin, Teknolojiyi Yaşayın</h1>
+                <p>Aracınız için en kaliteli ses ve multimedya sistemlerini profesyonel işçilikle buluşturuyoruz.</p>
+                <a href="projelerimiz.html" class="hero-button">Projelerimizi İncele</a>
+            </div>
+        </section>
+
+        <!-- ÖNE ÇIKAN HİZMETLER & NEDEN BİZ? -->
+        <section class="ozellikler">
+            <div class="container ozellikler-container">
+                <div class="one-cikan-hizmetler" data-aos="fade-right">
+                    <h2 class="section-title">Başlıca Hizmetlerimiz</h2>
+                    <a href="hizmetlerimiz.html" class="hizmet-link-item">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <div class="hizmet-link-metin">
+                            <h3>Multimedya Sistemleri</h3>
+                            <p>Android ekranlar ve navigasyon çözümleri.</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="hizmetlerimiz.html" class="hizmet-link-item">
+                        <i class="fa-solid fa-volume-high"></i>
+                        <div class="hizmet-link-metin">
+                            <h3>Ses Sistemleri</h3>
+                            <p>Subwoofer, amfi ve hoparlör montajı.</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="hizmetlerimiz.html" class="hizmet-link-item">
+                        <i class="fa-solid fa-truck-pickup"></i>
+                        <div class="hizmet-link-metin">
+                            <h3>7/24 Oto Kurtarma</h3>
+                            <p>Konya ve çevresinde yol yardım hizmeti.</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
                 </div>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-            <a href="hizmetlerimiz.html" class="hizmet-link-item">
-                <i class="fa-solid fa-volume-high"></i>
-                <div class="hizmet-link-metin">
-                    <h3>Ses Sistemleri</h3>
-                    <p>Subwoofer, amfi ve hoparlör montajı.</p>
-                </div>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-            <a href="hizmetlerimiz.html" class="hizmet-link-item">
-                <i class="fa-solid fa-truck-pickup"></i>
-                <div class="hizmet-link-metin">
-                    <h3>7/24 Oto Kurtarma</h3>
-                    <p>Konya ve çevresinde yol yardım hizmeti.</p>
-                </div>
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-        </div>
-
-        <!-- Sağ Sütun: Neden Biz Kartları -->
-        <div class="ozellikler-content" data-aos="fade-left" data-aos-delay="200">
-            
-            <!-- BAŞLIK DOĞRU YERDE! -->
-            <h2 class="section-title">Neden Biz?</h2>
-
-            <div class="ozellik-item">
-                <i class="fa-solid fa-medal"></i>
-                <div>
-                    <h3>Kaliteli Ürünler</h3>
-                    <p>Sadece güvendiğimiz, kendini kanıtlamış markaları kullanıyoruz.</p>
+                <div class="ozellikler-content" data-aos="fade-left" data-aos-delay="200">
+                    <h2 class="section-title">Neden Biz?</h2>
+                    <div class="ozellik-item">
+                        <i class="fa-solid fa-medal"></i>
+                        <div>
+                            <h3>Kaliteli Ürünler</h3>
+                            <p>Sadece güvendiğimiz, kendini kanıtlamış markaları kullanıyoruz.</p>
+                        </div>
+                    </div>
+                    <div class="ozellik-item">
+                        <i class="fa-solid fa-gears"></i>
+                        <div>
+                            <h3>Profesyonel Montaj</h3>
+                            <p>Yılların tecrübesiyle, aracınıza zarar vermeden, titiz bir işçilik sunuyoruz.</p>
+                        </div>
+                    </div>
+                    <div class="ozellik-item">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                        <div>
+                            <h3>Müşteri Desteği</h3>
+                            <p>İşlem sonrası da yanınızdayız. Her türlü sorunuz için teknik destek sağlıyoruz.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="ozellik-item">
-                <i class="fa-solid fa-gears"></i>
-                <div>
-                    <h3>Profesyonel Montaj</h3>
-                    <p>Yılların tecrübesiyle, aracınıza zarar vermeden, titiz bir işçilik sunuyoruz.</p>
-                </div>
-            </div>
-            <div class="ozellik-item">
-                <i class="fa-solid fa-handshake-angle"></i>
-                <div>
-                    <h3>Müşteri Desteği</h3>
-                    <p>İşlem sonrası da yanınızdayız. Her türlü sorunuz için teknik destek sağlıyoruz.</p>
-                </div>
-            </div>
-        </div>
+        </section>
 
-    </div>
-</section>
-
-    <!-- HAREKETE GEÇİRİCİ MESAJ -->
-    <section class="cta">
-        <div class="container">
-            <h2>Hayalinizdeki Sistemi Kurmaya Hazır mısınız?</h2>
-            <p>Fikir alışverişi yapmak ve aracınıza en uygun çözümü bulmak için bizimle iletişime geçin.</p>
-            <a href="iletisim.html" class="hero-button">Hemen Bize Ulaşın</a>
-        </div>
-    </section>
+        <!-- HAREKETE GEÇİRİCİ MESAJ -->
+        <section class="cta">
+            <div class="container">
+                <h2>Hayalinizdeki Sistemi Kurmaya Hazır mısınız?</h2>
+                <p>Fikir alışverişi yapmak ve aracınıza en uygun çözümü bulmak için bizimle iletişime geçin.</p>
+                <a href="iletisim.html" class="hero-button">Hemen Bize Ulaşın</a>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
             <div class="footer-icerik">
-                <div class="adres">
+                <address class="adres">
                     <h4>Adresimiz</h4>
                     <p>Emirgazi, Şeyh Ulema Recep Ağa Cd. No:215-F, 42030 Karatay/Konya</p>
-                </div>
+                </address>
                 <div class="sosyal-medya">
                     <h4>Bize Ulaşın</h4>
                     <p>Telefon: <a href="tel:+905346339921">0534 633 99 21</a></p>
-                    <p>WhatsApp: <a href="https://wa.me/905346339921" target="_blank">WhatsApp'tan Yaz</a></p>
-                    <p>Instagram: <a href="https://www.instagram.com/cetinn.elektronik/" target="_blank">@cetinn.elektronik</a></p>
+                    <p>WhatsApp: <a href="https://wa.me/905346339921" target="_blank" rel="noopener">WhatsApp'tan Yaz</a></p>
+                    <p>Instagram: <a href="https://www.instagram.com/cetinn.elektronik/" target="_blank" rel="noopener">@cetinn.elektronik</a></p>
                 </div>
             </div>
-            <<div class="copyright">
+            <div class="copyright">
                 <p>
-                    © 2024 Çetin Elektronik Auto Music System. Tüm hakları saklıdır. | 
-                    Web Tasarım: <a href="https://www.instagram.com/gkhnnnl/" target="_blank" class="designer-link">Gökhan ÜNLÜ</a>
+                    © 2024 Çetin Elektronik Auto Music System. Tüm hakları saklıdır. |
+                    Web Tasarım: <a href="https://www.instagram.com/gkhnnnl/" target="_blank" rel="noopener" class="designer-link">Gökhan ÜNLÜ</a>
                 </p>
             </div>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+        AOS.init();
+        // Hamburger Menü
         const hamburger = document.querySelector('.hamburger');
-        const navMenu = document.querySelector('nav');
-    
+        const navMenu = document.querySelector('nav ul');
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
+            const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', !expanded);
         });
     </script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-
-</script>
 </body>
 </html>
