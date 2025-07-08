@@ -6,10 +6,10 @@
     <title>Çetin Elektronik - Ana Sayfa</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    <!-- İKON KÜTÜPHANESİ (YENİ EKLEDİK) -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <link rel="stylesheet" href="style.css">
-    <!-- FANCYBOX KÜTÜPHANESİ (YENİ EKLEDİK) -->
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 </head>
@@ -22,7 +22,7 @@
                 <span>ÇETİN ELEKTRONİK</span>
             </a>
             <nav>
-                <ul> <!-- Eskiden burada 'nav-links' sınıfı vardı, artık yok, daha basit. -->
+                <ul> 
                     <li><a href="index.html">Ana Sayfa</a></li>
                     <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
                     <li><a href="projelerimiz.html">Projelerimiz</a></li>
@@ -49,52 +49,51 @@
             
             <div class="galeri-grid">
                 
-                <!-- Proje: Chevrolet Cruze (2 Resim) -->
+                
                 <a href="images/cruze-1.jpg" data-fancybox="cruze" class="galeri-item">
                     <img src="images/cruze-1.jpg" alt="Chevrolet Cruze Multimedya Ekran">
                     <div class="galeri-overlay"><i class="fa-solid fa-images"></i><p>Chevrolet Cruze</p></div>
                 </a>
                 <a href="images/cruze-2.jpg" data-fancybox="cruze" style="display:none;"></a>
     
-                <!-- Proje: Renault Megane (2 Resim) -->
+                
                 <a href="images/megane-1.jpg" data-fancybox="megane" class="galeri-item">
                     <img src="images/megane-1.jpg" alt="Renault Megane Multimedya Ekran">
                     <div class="galeri-overlay"><i class="fa-solid fa-images"></i><p>Renault Megane</p></div>
                 </a>
                 <a href="images/megane-2.jpg" data-fancybox="megane" style="display:none;"></a>
     
-                <!-- Proje: Nissan Qashqai (1 Resim) -->
+                
                 <a href="images/nissan-1.jpg" data-fancybox="nissan" class="galeri-item">
                     <img src="images/nissan-1.jpg" alt="Nissan Qashqai Multimedya Ekran">
                     <div class="galeri-overlay"><i class="fa-solid fa-image"></i><p>Nissan Qashqai</p></div>
                 </a>
     
-                <!-- Proje: VW Polo (1 Resim) -->
+                
                 <a href="images/polo-1.jpg" data-fancybox="polo" class="galeri-item">
                     <img src="images/polo-1.jpg" alt="VW Polo Multimedya Ekran">
                     <div class="galeri-overlay"><i class="fa-solid fa-image"></i><p>VW Polo</p></div>
                 </a>
-            </div> <!-- Multimedya galeri-grid bitti -->
+            </div> 
     
-                    <!-- =========== ARAÇ SES SİSTEMİ UYGULAMALARI BÖLÜMÜ (YENİ YAPI) =========== -->
+                    <!-- =========== ARAÇ SES SİSTEMİ UYGULAMALARI BÖLÜMÜ =========== -->
         <h2 class="proje-bolum-baslik">Araç Ses Sistemi Uygulamaları</h2>
 
-        <!-- === PROJE 1: Fiat Linea === -->
+        
         <h3 class="proje-alt-baslik">Fiat Linea Sistem Kurulumu</h3>
         <div class="galeri-grid">
             
-            <!-- Fiat Linea Projesine Ait Tüm Resimler (5 Resim) -->
-            <!-- Kapak fotoğrafı -->
+            
             <a href="images/ses1.jpg" data-fancybox="linea-sistem" class="galeri-item">
                 <img src="images/ses1.jpg" alt="Fiat Linea Genel Görünüm">
                 <div class="galeri-overlay"><i class="fa-solid fa-images"></i><p>Fiat Linea Projesi</p></div>
             </a>
-            <!-- Diğer resimler (gizli) -->
+           
             <a href="images/ses2.jpg" data-fancybox="linea-sistem" style="display:none;"></a>
             <a href="images/ses3.jpg" data-fancybox="linea-sistem" style="display:none;"></a>
             <a href="images/ses5.jpg" data-fancybox="linea-sistem" style="display:none;"></a>
 
-        </div> <!-- Fiat Linea galeri-grid bitti -->
+        </div> 
 
 
         <!-- === BİR SONRAKİ ARAÇ PROJESİ BURAYA GELECEK === -->
@@ -110,14 +109,14 @@
         -->
 
 
-    </div> <!-- container bitti -->
+    </div> 
 </main>
     
     
-        </div> <!-- container bitti -->
+        </div> 
     </main>
     
-            </div> <!-- galeri-grid bitti -->
+            </div> 
     
             <!-- =========== SES SİSTEMLERİ BÖLÜMÜ (Gelecek için hazır) =========== -->
             <!-- <h2 class="proje-bolum-baslik">Ses Sistemi Uygulamaları</h2>
@@ -126,7 +125,7 @@
             </div> -->
     
     
-        </div> <!-- container bitti -->
+        </div> 
     </main>
 
     <footer>
@@ -159,23 +158,23 @@
     Fancybox.bind("[data-fancybox]", {});
   </script>
 
-<!-- FİLTRELEME GALERİSİ JAVASCRIPT KODU (YENİ EKLEDİK) -->
+
 <script>
-    // Gerekli elemanları seçelim
+    
     const filtreButonlari = document.querySelectorAll(".filter-btn");
     const galeriItemleri = document.querySelectorAll(".galeri-item");
 
-    // Her bir butona tıklandığında ne olacağını söyleyelim
+    
     filtreButonlari.forEach(button => {
         button.addEventListener("click", () => {
-            // Önce diğer butonlardaki 'active' sınıfını kaldıralım
+            
             filtreButonlari.forEach(btn => btn.classList.remove("active"));
-            // Sadece tıklanan butona 'active' sınıfını ekleyelim
+            
             button.classList.add("active");
 
             const filtre = button.getAttribute("data-filter");
 
-            // Her bir galeri resmini kontrol edelim
+            
             galeriItemleri.forEach(item => {
                 const kategori = item.getAttribute("data-category");
 
