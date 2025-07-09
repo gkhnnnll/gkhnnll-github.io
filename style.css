@@ -939,10 +939,26 @@ a.galeri-item:hover .galeri-overlay { opacity: 1; }
 .urun-filter-btn:hover {
     background-color: var(--primary-color);
     border-color: var(--primary-color);
-    color: #ffffff;
+    color: #d61596;
 }
 .urun-filter-btn.active { /* Aktif olan butonun stili */
     background-color: var(--primary-color);
     border-color: var(--primary-color);
-    color: #ffffff;
+    color: #0ab62f;
+}
+/* =========================================== */
+/* === ÜRÜNLER SAYFASI - FİLTRE BAŞLIĞI === */
+/* =========================================== */
+
+#filtre-sonuc-baslik-alani {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid var(--primary-color);
+}
+
+#aktif-filtre-baslik {
+    margin: 0;
+    font-size: 38px;
+    color: #c90c0c;
 }
