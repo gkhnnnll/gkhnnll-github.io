@@ -985,7 +985,15 @@
             </div>
         </div>
     </main>
-
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('nav');
+    
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     // 1. AOS Animasyonları Başlatma
