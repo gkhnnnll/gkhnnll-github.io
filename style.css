@@ -962,3 +962,26 @@ a.galeri-item:hover .galeri-overlay { opacity: 1; }
     font-size: 38px;
     color: #c90c0c;
 }
+
+/* Hamburger menüyü sağ tarafa yaslamak için */
+@media (max-width: 850px) {
+    header .container {
+        flex-direction: row; /* Logo ve hamburgeri yan yana tut */
+        justify-content: space-between; /* Logoyu sola, hamburgeri sağa yasla */
+        align-items: center;
+        padding: 15px 20px; /* Yanlardan boşluk ekle */
+    }
+
+    .hamburger {
+        order: 2; /* Hamburgeri sağ tarafa al */
+    }
+
+    .logo-container {
+        order: 1; /* Logoyu sol tarafa al */
+    }
+
+    nav {
+        order: 3; /* Açılır menüyü en alta al */
+        width: 100%;
+    }
+}
