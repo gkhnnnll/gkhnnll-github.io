@@ -985,3 +985,42 @@ a.galeri-item:hover .galeri-overlay { opacity: 1; }
         width: 100%;
     }
 }
+
+
+/* =========================================== */
+/* === WHATSAPP YÜZEN BUTON STİLİ === */
+/* =========================================== */
+.floating-whatsapp-btn {
+    position: fixed; /* Ekranla birlikte sabit kalır */
+    bottom: 25px; /* Alttan boşluk */
+    right: 25px; /* Sağdan boşluk */
+    background-color: var(--whatsapp-color, #25D366); /* WhatsApp yeşili */
+    color: #ffffff; /* Beyaz ikon */
+    width: 60px; /* Buton genişliği */
+    height: 60px; /* Buton yüksekliği */
+    border-radius: 50%; /* Tam yuvarlak yapar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px; /* İkon boyutu */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Gölge efekti */
+    z-index: 1000; /* En üstte görünür */
+    text-decoration: none; /* Altındaki çizgiyi kaldır */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.floating-whatsapp-btn:hover {
+    transform: scale(1.1); /* Üzerine gelince biraz büyüsün */
+    background-color: #128C7E; /* Koyulaşsın */
+}
+
+/* Küçük ekranlarda (telefon) boyutunu ve pozisyonunu ayarlayalım */
+@media (max-width: 768px) {
+    .floating-whatsapp-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 28px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
